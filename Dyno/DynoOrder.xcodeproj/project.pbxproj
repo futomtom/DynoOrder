@@ -11,6 +11,7 @@
 		FA55C2A51DB99AF40079F9D0 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A41DB99AF40079F9D0 /* ExampleViewController.swift */; };
 		FA55C2A71DB99D470079F9D0 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */; };
 		FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */; };
+		FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71BB361DB9B78D007C3CE4 /* Dish.swift */; };
 		FA9803CC1DB9795700C6F4C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9803CB1DB9795700C6F4C9 /* AppDelegate.swift */; };
 		FA9803CE1DB9795700C6F4C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9803CD1DB9795700C6F4C9 /* ViewController.swift */; };
 		FA9803D11DB9795700C6F4C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9803CF1DB9795700C6F4C9 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		FA55C2A41DB99AF40079F9D0 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		FA71BB361DB9B78D007C3CE4 /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		FA9803C81DB9795700C6F4C9 /* DynoOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynoOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9803CB1DB9795700C6F4C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9803CD1DB9795700C6F4C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA71BB351DB9B772007C3CE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA71BB361DB9B78D007C3CE4 /* Dish.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FA9803BF1DB9795700C6F4C9 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		FA9803CA1DB9795700C6F4C9 /* DynoOrder */ = {
 			isa = PBXGroup;
 			children = (
+				FA71BB351DB9B772007C3CE4 /* Model */,
 				FA9803CB1DB9795700C6F4C9 /* AppDelegate.swift */,
 				FA9803CD1DB9795700C6F4C9 /* ViewController.swift */,
 				FA9803DD1DB97A0300C6F4C9 /* MainViewController.swift */,
@@ -237,6 +248,7 @@
 				FA9803E11DB97A0300C6F4C9 /* PresentedViewController.swift in Sources */,
 				FA9803CE1DB9795700C6F4C9 /* ViewController.swift in Sources */,
 				FA9803CC1DB9795700C6F4C9 /* AppDelegate.swift in Sources */,
+				FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */,
 				FA55C2A51DB99AF40079F9D0 /* ExampleViewController.swift in Sources */,
 				FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */,
 			);

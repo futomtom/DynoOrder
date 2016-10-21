@@ -14,12 +14,14 @@ class ExampleViewController: UIViewController {
     
     var segmentioStyle = SegmentioStyle.imageBeforeLabel
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet fileprivate weak var segmentViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var segmentioView: Segmentio!
     @IBOutlet fileprivate weak var containerView: UIView!
-    @IBOutlet fileprivate weak var scrollView: UIScrollView!
-    
+  //  @IBOutlet fileprivate weak var scrollView: UIScrollView!
     fileprivate lazy var viewControllers: [UIViewController] = []
+    var items:[Dish] = []
+    
     // MARK: - Init
     
     class func create() -> ExampleViewController {
@@ -43,6 +45,13 @@ class ExampleViewController: UIViewController {
         
         let RightButtonItem = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .plain, target: self, action:  #selector(self.OpenMenu))
         self.navigationItem.setLeftBarButton(RightButtonItem, animated: true)
+        
+        LoadData()
+    }
+    
+    func LoadData() {
+        
+        
     }
     
  
@@ -55,7 +64,7 @@ class ExampleViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupSegmentioView()
-        setupScrollView()
+       
         setupBadgeCountForIndex(1)
     }
     
@@ -69,10 +78,7 @@ class ExampleViewController: UIViewController {
         segmentioView.selectedSegmentioIndex = selectedSegmentioIndex()
         
         segmentioView.valueDidChange = { [weak self] _, segmentIndex in
-            if let scrollViewWidth = self?.scrollView.frame.width {
-                let contentOffsetX = scrollViewWidth * CGFloat(segmentIndex)
-                self?.scrollView.setContentOffset(CGPoint(x: contentOffsetX, y: 0), animated: true)
-            }
+                print (segmentIndex )
         }
     }
     
@@ -157,45 +163,34 @@ class ExampleViewController: UIViewController {
     fileprivate func selectedSegmentioIndex() -> Int {
         return 0
     }
-    
-    // MARK: - Setup container view
-    
-    fileprivate func setupScrollView() {
-        scrollView.contentSize = CGSize(
-            width: UIScreen.main.bounds.width * CGFloat(viewControllers.count),
-            height: containerView.frame.height
-        )
-        
-        for (index, viewController) in viewControllers.enumerated() {
-            viewController.view.frame = CGRect(
-                x: UIScreen.main.bounds.width * CGFloat(index),
-                y: 0,
-                width: scrollView.frame.width,
-                height: scrollView.frame.height
-            )
-            addChildViewController(viewController)
-            scrollView.addSubview(viewController.view, options: .useAutoresize) // module's extension
-            viewController.didMove(toParentViewController: self)
-        }
-    }
-    
-    // MARK: - Actions
-    
-    fileprivate func goToControllerAtIndex(_ index: Int) {
-        segmentioView.selectedSegmentioIndex = index
-    }
 
+    
 }
 
-extension ExampleViewController: UIScrollViewDelegate {
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let currentPage = floor(scrollView.contentOffset.x / scrollView.frame.width)
-        segmentioView.selectedSegmentioIndex = Int(currentPage)
+extension ExampleViewController {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return array1.count
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 0)
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let string = array1[section]
+        let stringArray = string.characters.split{$0 == " "}.map(String.init)
+        return stringArray.count
     }
     
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        
+        
+        return cell
+    }
+    
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+    }
 }
