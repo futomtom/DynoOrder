@@ -1,0 +1,19 @@
+PODS:
+  - Segmentio (2.0)
+  - SideMenu (2.0.2)
+
+DEPENDENCIES:
+  - Segmentio (from `../`)
+  - SideMenu
+
+EXTERNAL SOURCES:
+  Segmentio:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Segmentio: 3f55a720e214e6d5ec1b205663228691bc3bb043
+  SideMenu: f22ea9330f09810cc6c3ebd6e3be27bacb91ab11
+
+PODFILE CHECKSUM: 90bbad962620dedc5e29a0144ec929f987151326
+
+COCOAPODS: 1.1.0.rc.2
