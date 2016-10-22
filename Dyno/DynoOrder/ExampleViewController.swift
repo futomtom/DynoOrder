@@ -50,8 +50,11 @@ class ExampleViewController: UIViewController {
     }
     
     func LoadData() {
-        
-        
+        for i in 0 ... DB.sharedInstance.dishName.count - 1  {
+            let item = Dish()
+            item.setData(name: DB.sharedInstance.dishName[i],price:100)
+            items.append(item)
+        }
     }
     
  
@@ -167,21 +170,20 @@ class ExampleViewController: UIViewController {
     
 }
 
-extension ExampleViewController {
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return array1.count
+extension ExampleViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let string = array1[section]
-        let stringArray = string.characters.split{$0 == " "}.map(String.init)
-        return stringArray.count
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  
+        return items.count
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCell
+        cell.setData(item: items[indexPath.row], index: indexPath.row)
         
         
         return cell
@@ -189,7 +191,7 @@ extension ExampleViewController {
     
     
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
         
     }
