@@ -9,8 +9,9 @@
 import UIKit
 import Segmentio
 import SideMenu
+import RealmSwift
 
-class ExampleViewController: UIViewController {
+class productViewController: UIViewController {
     
     var segmentioStyle = SegmentioStyle.imageBeforeLabel
     
@@ -33,6 +34,7 @@ class ExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let realm = try! Realm(configuration: RealmConfig.Main.configuration)
         
         switch segmentioStyle {
         case .onlyLabel, .imageBeforeLabel, .imageAfterLabel:
@@ -170,7 +172,7 @@ class ExampleViewController: UIViewController {
     
 }
 
-extension ExampleViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension productViewController: UICollectionViewDelegate, UICollectionViewDataSource{
      func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
