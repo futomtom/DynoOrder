@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D05EFD8A3D8EBD6A0C9570D3 /* Pods_DynoOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */; };
+		FA06006D1DBC3580003DB77F /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06006C1DBC3580003DB77F /* RealmModels.swift */; };
 		FA55C2A51DB99AF40079F9D0 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A41DB99AF40079F9D0 /* ExampleViewController.swift */; };
 		FA55C2A71DB99D470079F9D0 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */; };
 		FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */; };
@@ -26,6 +27,8 @@
 		4D02A09AACA7C8FE4B8175AD /* Pods-DynoOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynoOrder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynoOrder/Pods-DynoOrder.debug.xcconfig"; sourceTree = "<group>"; };
 		58CF027A5CB5815F065325A4 /* Pods-DynoOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynoOrder.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynoOrder/Pods-DynoOrder.release.xcconfig"; sourceTree = "<group>"; };
 		A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynoOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06006B1DBC3533003DB77F /* products.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = products.realm; sourceTree = "<group>"; };
+		FA06006C1DBC3580003DB77F /* RealmModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
 		FA55C2A41DB99AF40079F9D0 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		FA71BB351DB9B772007C3CE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA06006C1DBC3580003DB77F /* RealmModels.swift */,
 				FA71BB361DB9B78D007C3CE4 /* Dish.swift */,
 			);
 			name = Model;
@@ -111,6 +115,7 @@
 				FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */,
 				FA9803CF1DB9795700C6F4C9 /* Main.storyboard */,
 				FA9803D21DB9795700C6F4C9 /* Assets.xcassets */,
+				FA06006B1DBC3533003DB77F /* products.realm */,
 				FA9803D41DB9795700C6F4C9 /* LaunchScreen.storyboard */,
 				FA9803D71DB9795700C6F4C9 /* Info.plist */,
 			);
@@ -251,6 +256,7 @@
 				FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */,
 				FA55C2A51DB99AF40079F9D0 /* ExampleViewController.swift in Sources */,
 				FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */,
+				FA06006D1DBC3580003DB77F /* RealmModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
