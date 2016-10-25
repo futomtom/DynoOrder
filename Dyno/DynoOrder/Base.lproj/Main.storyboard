@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -26,49 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-561" y="336.99999999999994"/>
         </scene>
-        <!--Login VC-->
-        <scene sceneID="XZh-dw-B7D">
-            <objects>
-                <viewController id="QHN-nZ-kbB" userLabel="Login VC" customClass="LoginVC" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rm7-bv-OCN"/>
-                        <viewControllerLayoutGuide type="bottom" id="LW0-9z-RHu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u3J-Dz-DVN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="180" id="Alv-tt-d5n"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Alv-tt-d5n"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Swipe Here" id="8zK-3f-g7q">
-                        <barButtonItem key="backBarButtonItem" title=" " id="FVG-mn-9HX"/>
-                        <barButtonItem key="leftBarButtonItem" title="Left Menu" id="hjJ-My-xDQ">
-                            <connections>
-                                <segue destination="DuX-EW-0mP" kind="presentation" identifier="Test" id="yoa-B2-xG5"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Right Menu" id="ckn-oO-hhX">
-                            <connections>
-                                <segue destination="z7k-fk-pfc" kind="presentation" id="VWw-M5-wyb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="myview" destination="u3J-Dz-DVN" id="HGm-Bv-htQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVk-3R-pAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="353" y="179"/>
-        </scene>
-        <!--LoginVC-->
+        <!--Swipe Here-->
         <scene sceneID="kVe-gw-eAa">
             <objects>
                 <viewController id="6qj-BA-EZd" customClass="LoginVC" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,9 +65,6 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="Login:" destination="QHN-nZ-kbB" eventType="touchUpInside" id="UT3-PQ-SRc"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -132,15 +87,21 @@
                             <constraint firstItem="Vch-il-E4x" firstAttribute="centerX" secondItem="4LS-gZ-yjL" secondAttribute="centerX" id="tvK-Qn-EIY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tsw-ei-hdn"/>
+                    <navigationItem key="navigationItem" title="Swipe Here" id="Xlo-bV-JOE">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rs0-yJ-WDg"/>
+                        <barButtonItem key="leftBarButtonItem" title="Left Menu" id="DdN-xm-bcP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Right Menu" id="Hyz-r7-1Cw"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Name" destination="YZg-wp-CL5" id="QGy-Gf-gKX"/>
                         <outlet property="Password" destination="i7z-FZ-RVI" id="7oe-22-yD5"/>
+                        <segue destination="DuX-EW-0mP" kind="presentation" id="Aqr-aw-ZiK"/>
+                        <segue destination="z7k-fk-pfc" kind="presentation" id="FS3-ZO-J22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvu-Ak-kfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1005"/>
+            <point key="canvasLocation" x="162" y="337"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="Zbc-0f-8nT">
