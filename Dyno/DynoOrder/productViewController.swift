@@ -52,11 +52,8 @@ class productViewController: UIViewController {
     }
     
     func LoadData() {
-        for i in 0 ... DB.sharedInstance.dishName.count - 1  {
-            let item = Dish()
-            item.setData(name: DB.sharedInstance.dishName[i],price:100)
-            items.append(item)
-        }
+        let allProducts = product.all()
+    
     }
     
  
@@ -195,6 +192,8 @@ extension productViewController: UICollectionViewDelegate, UICollectionViewDataS
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
+        
+        
         
     }
 }
