@@ -15,11 +15,17 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var Password: UITextField!
     
+    @IBOutlet var myview: UIView!
 
         override func viewDidLoad() {
             super.viewDidLoad()
             
+        
+            
+            
+
             setupSideMenu()
+            
             
         }
         
