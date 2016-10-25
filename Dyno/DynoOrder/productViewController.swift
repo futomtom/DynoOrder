@@ -25,9 +25,9 @@ class productViewController: UIViewController {
     
     // MARK: - Init
     
-    class func create() -> ExampleViewController {
+    class func create() -> productViewController {
         let board = UIStoryboard(name: "Main", bundle: nil)
-        return board.instantiateViewController(withIdentifier: String(describing: self)) as! ExampleViewController
+        return board.instantiateViewController(withIdentifier: String(describing: self)) as! productViewController
     }
     
     // MARK: - Lifecycle

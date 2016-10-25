@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -26,52 +26,72 @@
             </objects>
             <point key="canvasLocation" x="-561" y="336.99999999999994"/>
         </scene>
-        <!--Swipe Here-->
+        <!--Login VC-->
         <scene sceneID="XZh-dw-B7D">
             <objects>
-                <viewController id="QHN-nZ-kbB" customClass="MainViewController" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QHN-nZ-kbB" userLabel="Login VC" customClass="LoginController" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rm7-bv-OCN"/>
                         <viewControllerLayoutGuide type="bottom" id="LW0-9z-RHu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0gg-po-Ih1">
+                    <view key="view" contentMode="scaleToFill" id="u3J-Dz-DVN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-SB-Zp9">
-                                <frame key="frameInset" width="375" height="635"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="K71-wb-pgP">
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMn-tw-NTB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EIK-CI-s5e">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PX-Z4-FCy" userLabel="E-Mail">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-yY-dWG" customClass="MaterialTextField" customModule="DynoOrder" customModuleProvider="target">
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDT-0Y-3w1" customClass="MaterialTextField" customModule="DynoOrder" customModuleProvider="target">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32l-zT-paL" customClass="MaterialButton" customModule="DynoOrder" customModuleProvider="target">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="DMn-tw-NTB" firstAttribute="leading" secondItem="LFJ-SB-Zp9" secondAttribute="leading" id="BTk-bF-S0d"/>
-                                    <constraint firstAttribute="trailing" secondItem="DMn-tw-NTB" secondAttribute="trailing" id="M93-XD-94I"/>
-                                    <constraint firstItem="DMn-tw-NTB" firstAttribute="width" secondItem="LFJ-SB-Zp9" secondAttribute="width" id="MCM-o2-30q"/>
-                                    <constraint firstItem="DMn-tw-NTB" firstAttribute="top" secondItem="LFJ-SB-Zp9" secondAttribute="top" id="QhZ-ly-cBA"/>
-                                    <constraint firstAttribute="bottom" secondItem="DMn-tw-NTB" secondAttribute="bottom" id="sFU-Ot-379"/>
+                                    <constraint firstItem="EIK-CI-s5e" firstAttribute="leading" secondItem="K71-wb-pgP" secondAttribute="leading" id="0cZ-Xo-d2j"/>
+                                    <constraint firstItem="WDT-0Y-3w1" firstAttribute="leading" secondItem="K71-wb-pgP" secondAttribute="leading" id="F5G-3T-ipn"/>
+                                    <constraint firstAttribute="height" constant="120" id="Mdl-rg-RJe"/>
+                                    <constraint firstAttribute="trailing" secondItem="32l-zT-paL" secondAttribute="trailing" id="PQi-AF-xy5"/>
+                                    <constraint firstAttribute="trailing" secondItem="EIK-CI-s5e" secondAttribute="trailing" id="ahx-TO-dS0"/>
+                                    <constraint firstItem="32l-zT-paL" firstAttribute="leading" secondItem="K71-wb-pgP" secondAttribute="leading" id="xuQ-De-3e4"/>
+                                    <constraint firstAttribute="trailing" secondItem="WDT-0Y-3w1" secondAttribute="trailing" id="zqu-K2-oUB"/>
                                 </constraints>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="← Swipe Screen Edges in View →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma4-O6-wOT">
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LFJ-SB-Zp9" firstAttribute="top" secondItem="0gg-po-Ih1" secondAttribute="topMargin" id="0T7-Dc-CaB"/>
-                            <constraint firstItem="LFJ-SB-Zp9" firstAttribute="leading" secondItem="0gg-po-Ih1" secondAttribute="leading" id="OsA-4z-Y7t"/>
-                            <constraint firstItem="ma4-O6-wOT" firstAttribute="top" secondItem="LFJ-SB-Zp9" secondAttribute="bottom" constant="8" id="UUi-lo-0RA"/>
-                            <constraint firstItem="ma4-O6-wOT" firstAttribute="centerX" secondItem="0gg-po-Ih1" secondAttribute="centerX" id="aia-PT-OH3"/>
-                            <constraint firstItem="LW0-9z-RHu" firstAttribute="top" secondItem="ma4-O6-wOT" secondAttribute="bottom" constant="8" id="d5Q-Sj-0Xz"/>
-                            <constraint firstItem="LFJ-SB-Zp9" firstAttribute="top" secondItem="Rm7-bv-OCN" secondAttribute="bottom" id="ssi-ps-a2k"/>
-                            <constraint firstAttribute="trailing" secondItem="LFJ-SB-Zp9" secondAttribute="trailing" id="t0e-pR-bB1"/>
+                            <constraint firstAttribute="height" constant="180" id="Alv-tt-d5n"/>
+                            <constraint firstItem="K71-wb-pgP" firstAttribute="centerY" secondItem="u3J-Dz-DVN" secondAttribute="centerY" id="QHy-gi-dDS"/>
+                            <constraint firstItem="LW0-9z-RHu" firstAttribute="top" secondItem="K71-wb-pgP" secondAttribute="bottom" constant="100" id="UZD-Ra-8W1"/>
+                            <constraint firstItem="K71-wb-pgP" firstAttribute="top" secondItem="Rm7-bv-OCN" secondAttribute="bottom" constant="20" id="Y4u-p2-aiO"/>
+                            <constraint firstItem="K71-wb-pgP" firstAttribute="centerX" secondItem="u3J-Dz-DVN" secondAttribute="centerX" id="bGT-Ae-uKG"/>
+                            <constraint firstItem="K71-wb-pgP" firstAttribute="leading" secondItem="u3J-Dz-DVN" secondAttribute="leadingMargin" constant="20" id="hgP-lJ-hlm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K71-wb-pgP" secondAttribute="trailing" constant="20" id="wJq-Nf-Jjr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="ssi-ps-a2k"/>
+                                <exclude reference="Y4u-p2-aiO"/>
+                                <exclude reference="UZD-Ra-8W1"/>
                             </mask>
                         </variation>
                     </view>
