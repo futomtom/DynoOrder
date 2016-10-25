@@ -42,6 +42,9 @@ class LoginVC: UIViewController {
         }
 
     @IBAction func Login(_ sender: AnyObject) {
+        let vc:putOrderVC = storyboard!.instantiateViewController(withIdentifier: "putorder") as! putOrderVC
+        present(vc, animated: true, completion: nil)
+        
         
         
         

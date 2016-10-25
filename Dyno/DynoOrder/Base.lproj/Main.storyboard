@@ -65,6 +65,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Login:" destination="6qj-BA-EZd" eventType="touchUpInside" id="N0k-p8-bRC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -90,7 +93,7 @@
                     <navigationItem key="navigationItem" id="tsw-ei-hdn">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="7Of-9O-Hle">
                             <connections>
-                                <segue destination="DuX-EW-0mP" kind="presentation" identifier="leftmenu" id="Kv0-dP-Sbo"/>
+                                <segue destination="DuX-EW-0mP" kind="presentation" id="tka-Al-psQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="menu2" id="rBz-cb-h9p">
@@ -144,7 +147,7 @@
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="4WI-Ed-3Gr" detailTextLabel="yhC-Vd-zHj" style="IBUITableViewCellStyleValue1" id="7tx-O6-zAs" customClass="UITableViewVibrantCell" customModule="SideMenu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="4WI-Ed-3Gr" detailTextLabel="yhC-Vd-zHj" style="IBUITableViewCellStyleValue1" id="7tx-O6-zAs" customClass="ItemDetailCell" customModule="DynoOrder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7tx-O6-zAs" id="K0u-J2-Ab7">
@@ -232,7 +235,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="NLA-8t-ufi" detailTextLabel="gRD-Mt-9su" style="IBUITableViewCellStyleValue1" id="8Ng-b4-4hH" customClass="UITableViewVibrantCell" customModule="SideMenu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="NLA-8t-ufi" detailTextLabel="gRD-Mt-9su" style="IBUITableViewCellStyleValue1" id="8Ng-b4-4hH" customClass="ItemDetailCell" customModule="DynoOrder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ng-b4-4hH" id="U5K-l9-XWv">
@@ -260,7 +263,7 @@
                                     <segue destination="uMV-sw-TbB" kind="presentation" id="7VM-K4-IQ0"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headcell" textLabel="6x7-O7-DkG" detailTextLabel="8IH-BK-QXW" style="IBUITableViewCellStyleValue1" id="41i-KK-YM3" userLabel="Header Cell" customClass="UITableViewVibrantCell" customModule="SideMenu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headcell" textLabel="6x7-O7-DkG" detailTextLabel="8IH-BK-QXW" style="IBUITableViewCellStyleValue1" id="41i-KK-YM3" userLabel="Header Cell" customClass="HeaderTableViewCell" customModule="DynoOrder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="41i-KK-YM3" id="629-G3-Agl">
@@ -445,10 +448,10 @@
             </objects>
             <point key="canvasLocation" x="3250" y="-87"/>
         </scene>
-        <!--Example View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="SnZ-oL-LI4">
             <objects>
-                <viewController storyboardIdentifier="ExampleViewController" id="X3Q-Qd-BTR" customClass="ExampleViewController" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="putorder" id="X3Q-Qd-BTR" userLabel="Order View Controller" customClass="putOrderVC" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjZ-Oc-HHf"/>
                         <viewControllerLayoutGuide type="bottom" id="bCS-ON-APm"/>

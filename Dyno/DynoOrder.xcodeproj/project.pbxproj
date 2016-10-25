@@ -12,7 +12,7 @@
 		82DBF8701DBC9D0E00633DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */; };
 		D05EFD8A3D8EBD6A0C9570D3 /* Pods_DynoOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */; };
 		FA06006D1DBC3580003DB77F /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06006C1DBC3580003DB77F /* RealmModels.swift */; };
-		FA55C2A51DB99AF40079F9D0 /* productViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A41DB99AF40079F9D0 /* productViewController.swift */; };
+		FA55C2A51DB99AF40079F9D0 /* putOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A41DB99AF40079F9D0 /* putOrderVC.swift */; };
 		FA55C2A71DB99D470079F9D0 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */; };
 		FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */; };
 		FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71BB361DB9B78D007C3CE4 /* Dish.swift */; };
@@ -58,7 +58,7 @@
 		82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynoOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA06006C1DBC3580003DB77F /* RealmModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
-		FA55C2A41DB99AF40079F9D0 /* productViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productViewController.swift; sourceTree = "<group>"; };
+		FA55C2A41DB99AF40079F9D0 /* putOrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = putOrderVC.swift; sourceTree = "<group>"; };
 		FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		FA71BB361DB9B78D007C3CE4 /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				FA8C36F81DBFF7C800B7A361 /* LeftMenuTableView.swift */,
 				FA8C36F61DBFD9C100B7A361 /* OrderTableViewController.swift */,
 				FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */,
-				FA55C2A41DB99AF40079F9D0 /* productViewController.swift */,
+				FA55C2A41DB99AF40079F9D0 /* putOrderVC.swift */,
 				8207E0351DB9DF4A0072A9EB /* ItemCell.swift */,
 				FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */,
 				FA9803CF1DB9795700C6F4C9 /* Main.storyboard */,
@@ -314,7 +314,7 @@
 				FADFE58F1DBEE5EB00B183B5 /* Constants.swift in Sources */,
 				FA8C36F51DBFD94D00B7A361 /* RightMenuTableView.swift in Sources */,
 				FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */,
-				FA55C2A51DB99AF40079F9D0 /* productViewController.swift in Sources */,
+				FA55C2A51DB99AF40079F9D0 /* putOrderVC.swift in Sources */,
 				FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */,
 				FA06006D1DBC3580003DB77F /* RealmModels.swift in Sources */,
 				82DBF86E1DBC9BE800633DA8 /* RealmConfig.swift in Sources */,
