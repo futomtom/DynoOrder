@@ -2,18 +2,24 @@ import Foundation
 import RealmSwift
 
 
-class purchaseItem: Object {
-    dynamic var pid = 0
+class PurchaseItem: Object {
+    dynamic var product = Product()
     dynamic var amount = 0
     dynamic var type = 0
     dynamic var subtotal = 0
     
+    
+    func getSubtotal () -> Int {
+        return product.price * amount
+    }
+    
 }
 
 
-class order: Object {
+class Order: Object {
   dynamic var order_id = NSUUID().uuidString
-  let itemList = List<purchaseItem>()
+  dynamic var name:String!
+  let itemList = List<PurchaseItem>()
   dynamic var date:NSDate!
   dynamic var total = 0
 
@@ -21,28 +27,29 @@ class order: Object {
     
 }
 
-class product: Object {
+class Product: Object {
   dynamic var pid = 0
   dynamic var name = ""
   dynamic var price = 0
   dynamic var type = 0
-
     
-   static func all() -> Results<product> {
+   static func all() -> Results<Product> {
         let realm = try! Realm()
-        return realm.objects(product)
+        return realm.objects(Product)
     }
+    
+    
     
 }
 
-class daySale: Object {
+class DaySale: Object {
   dynamic var date:NSDate!
-  let orderList = List<order>()
+  let orderList = List<Order>()
   dynamic var total  = 0
 }
 
-class monthSales: Object {
+class MonthSales: Object {
     dynamic var name = ""
-    let daySalesList = List<daySale>()
+    let daySalesList = List<DaySale>()
     dynamic var total  = 0
 }
