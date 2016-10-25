@@ -27,7 +27,7 @@ private var deduplicationNotificationToken: NotificationToken! // FIXME: Remove 
 private func setDefaultRealmConfigurationWithUser(user: SyncUser) {
     Realm.Configuration.defaultConfiguration = Realm.Configuration(
         syncConfiguration: (user, Constants.syncServerURL!),
-        objectTypes: [product.self]
+        objectTypes: [Product.self]
     )
     realm = try! Realm()
 }

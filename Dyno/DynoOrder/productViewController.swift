@@ -52,7 +52,7 @@ class productViewController: UIViewController {
     }
     
     func LoadData() {
-        let allProducts = product.all()
+        let allProducts = Product.all()
     
     }
     

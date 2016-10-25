@@ -40,7 +40,7 @@ enum RealmConfig {
     private static let mainConfig = Realm.Configuration(
         fileURL: URL.inDocumentsFolder(fileName: "main.realm") ,
         schemaVersion: 1,
-        objectTypes: [product.self]
+        objectTypes: [Product.self]
     )
 
   case Main  //, Static

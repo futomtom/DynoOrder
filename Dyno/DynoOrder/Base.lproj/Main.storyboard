@@ -198,7 +198,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="X3Q-Qd-BTR" kind="show" id="T8a-aR-zH0"/>
+                                            <segue destination="X3Q-Qd-BTR" kind="show" identifier="order" id="T8a-aR-zH0"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="DpJ-hV-lmw" style="IBUITableViewCellStyleDefault" id="f9Q-QP-TZ6" customClass="UITableViewVibrantCell" customModule="SideMenu">
@@ -219,7 +219,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="u7M-mb-V6o" kind="show" id="J8Y-NG-KVd"/>
+                                            <segue destination="u7M-mb-V6o" kind="show" identifier="summary" id="J8Y-NG-KVd"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="mAf-mx-C48" style="IBUITableViewCellStyleDefault" id="dc6-l8-0cu" customClass="UITableViewVibrantCell" customModule="SideMenu">
@@ -294,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="961.875" y="698.23943661971828"/>
         </scene>
-        <!--Side Menu Table View-->
+        <!--Right Menu Table View-->
         <scene sceneID="l9t-dY-QwR">
             <objects>
-                <tableViewController id="Ol4-YR-KUL" customClass="SideMenuTableView" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ol4-YR-KUL" customClass="RightMenuTableView" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="49z-eA-JB7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
