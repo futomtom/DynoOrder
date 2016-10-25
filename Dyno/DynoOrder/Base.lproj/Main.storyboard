@@ -26,48 +26,6 @@
             </objects>
             <point key="canvasLocation" x="-561" y="336.99999999999994"/>
         </scene>
-        <!--Login VC-->
-        <scene sceneID="XZh-dw-B7D">
-            <objects>
-                <viewController id="QHN-nZ-kbB" userLabel="Login VC" customClass="LoginVC" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rm7-bv-OCN"/>
-                        <viewControllerLayoutGuide type="bottom" id="LW0-9z-RHu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u3J-Dz-DVN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="180" id="Alv-tt-d5n"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Alv-tt-d5n"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Swipe Here" id="8zK-3f-g7q">
-                        <barButtonItem key="backBarButtonItem" title=" " id="FVG-mn-9HX"/>
-                        <barButtonItem key="leftBarButtonItem" title="Left Menu" id="hjJ-My-xDQ">
-                            <connections>
-                                <segue destination="DuX-EW-0mP" kind="presentation" identifier="Test" id="yoa-B2-xG5"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Right Menu" id="ckn-oO-hhX">
-                            <connections>
-                                <segue destination="z7k-fk-pfc" kind="presentation" id="VWw-M5-wyb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="myview" destination="u3J-Dz-DVN" id="HGm-Bv-htQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVk-3R-pAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="353" y="179"/>
-        </scene>
         <!--LoginVC-->
         <scene sceneID="kVe-gw-eAa">
             <objects>
@@ -107,9 +65,6 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="Login:" destination="QHN-nZ-kbB" eventType="touchUpInside" id="UT3-PQ-SRc"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -132,7 +87,18 @@
                             <constraint firstItem="Vch-il-E4x" firstAttribute="centerX" secondItem="4LS-gZ-yjL" secondAttribute="centerX" id="tvK-Qn-EIY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tsw-ei-hdn"/>
+                    <navigationItem key="navigationItem" id="tsw-ei-hdn">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="7Of-9O-Hle">
+                            <connections>
+                                <segue destination="DuX-EW-0mP" kind="presentation" identifier="leftmenu" id="Kv0-dP-Sbo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menu2" id="rBz-cb-h9p">
+                            <connections>
+                                <segue destination="z7k-fk-pfc" kind="presentation" identifier="righmenu" id="DYO-Jk-8nL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Name" destination="YZg-wp-CL5" id="QGy-Gf-gKX"/>
                         <outlet property="Password" destination="i7z-FZ-RVI" id="7oe-22-yD5"/>
@@ -140,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvu-Ak-kfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1005"/>
+            <point key="canvasLocation" x="169" y="337"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="Zbc-0f-8nT">
@@ -162,90 +128,52 @@
             </objects>
             <point key="canvasLocation" x="1034" y="8"/>
         </scene>
-        <!--Side Menu Table View-->
+        <!--Left Menu Table View-->
         <scene sceneID="L2w-o7-jEN">
             <objects>
-                <tableViewController id="V6g-oO-Tbm" customClass="SideMenuTableView" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dqh-bs-m2M">
+                <tableViewController id="V6g-oO-Tbm" customClass="LeftMenuTableView" customModule="DynoOrder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dqh-bs-m2M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="8" maxY="0.0"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="vVB-ag-TnU">
-                            <rect key="frame" x="0.0" y="132" width="375" height="0.0"/>
+                            <rect key="frame" x="0.0" y="72" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <sections>
-                            <tableViewSection id="gP8-eA-dcW">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4WI-Ed-3Gr" style="IBUITableViewCellStyleDefault" id="7tx-O6-zAs" customClass="UITableViewVibrantCell" customModule="SideMenu">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7tx-O6-zAs" id="K0u-J2-Ab7">
-                                            <frame key="frameInset" width="375" height="44"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="4WI-Ed-3Gr" detailTextLabel="yhC-Vd-zHj" style="IBUITableViewCellStyleValue1" id="7tx-O6-zAs" customClass="UITableViewVibrantCell" customModule="SideMenu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7tx-O6-zAs" id="K0u-J2-Ab7">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Push View Controller 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4WI-Ed-3Gr">
+                                            <frame key="frameInset" minX="15" minY="11" width="172" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhC-Vd-zHj">
+                                            <frame key="frameInset" minX="316" minY="11" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Push View Controller 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4WI-Ed-3Gr">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="X3Q-Qd-BTR" kind="show" identifier="order" id="T8a-aR-zH0"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="DpJ-hV-lmw" style="IBUITableViewCellStyleDefault" id="f9Q-QP-TZ6" customClass="UITableViewVibrantCell" customModule="SideMenu">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9Q-QP-TZ6" id="i3p-Ya-AvO">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Push View Controller 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DpJ-hV-lmw">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="u7M-mb-V6o" kind="show" identifier="summary" id="J8Y-NG-KVd"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="mAf-mx-C48" style="IBUITableViewCellStyleDefault" id="dc6-l8-0cu" customClass="UITableViewVibrantCell" customModule="SideMenu">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dc6-l8-0cu" id="gyo-JQ-fx5">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Push View Controller 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mAf-mx-C48">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="NED-ch-QO3"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="X3Q-Qd-BTR" kind="show" identifier="order" id="T8a-aR-zH0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="V6g-oO-Tbm" id="g4T-qE-NYJ"/>
                             <outlet property="delegate" destination="V6g-oO-Tbm" id="COu-5N-acs"/>
@@ -628,6 +556,7 @@
     </scenes>
     <resources>
         <image name="menu" width="28" height="14"/>
+        <image name="menu2" width="25" height="25"/>
         <image name="shadow" width="375" height="9"/>
     </resources>
     <color key="tintColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

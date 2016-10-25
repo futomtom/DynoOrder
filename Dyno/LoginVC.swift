@@ -39,8 +39,6 @@ class LoginVC: UIViewController {
             SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
             SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
             
-            // Set up a cool background image for demo purposes
-            SideMenuManager.menuAnimationBackgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         }
 
     @IBAction func Login(_ sender: AnyObject) {
