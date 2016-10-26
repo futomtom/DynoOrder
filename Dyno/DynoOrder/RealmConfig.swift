@@ -40,7 +40,7 @@ enum RealmConfig {
     private static let mainConfig = Realm.Configuration(
         fileURL: URL.inDocumentsFolder(fileName: "main.realm") ,
         schemaVersion: 1,
-        objectTypes: [product.self]
+        objectTypes: [Product.self]
     )
 
   case Main  //, Static
@@ -49,7 +49,8 @@ enum RealmConfig {
     switch self {
     case .Main:
         DispatchQueue.once(token: "com.vectorform.test") {
-            
+            let t = Bundle.main.url(forResource: "default", withExtension: "realm")
+            let u = RealmConfig.mainConfig.fileURL!
             self.copyInitialData(
                 from: Bundle.main.url(forResource: "default", withExtension: "realm")!,
                 to: RealmConfig.mainConfig.fileURL!)
@@ -60,7 +61,8 @@ enum RealmConfig {
   }
     
     func copyInitialData(from: URL, to fileURL: URL) {
-        if !(fileURL as NSURL).checkPromisedItemIsReachableAndReturnError(nil) {
+        print("\(from.absoluteString) \(fileURL.absoluteString)")
+        if !((fileURL as? NSURL)?.checkPromisedItemIsReachableAndReturnError(nil))! {
             _ = try? FileManager.default.removeItem(at: fileURL )
             try! FileManager.default.copyItem(at: from , to: fileURL )
         }

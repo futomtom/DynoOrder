@@ -11,7 +11,7 @@ import Segmentio
 import SideMenu
 import RealmSwift
 
-class productViewController: UIViewController {
+class putOrderVC: UIViewController {
     
     var segmentioStyle = SegmentioStyle.imageBeforeLabel
     
@@ -25,9 +25,9 @@ class productViewController: UIViewController {
     
     // MARK: - Init
     
-    class func create() -> productViewController {
+    class func create() -> putOrderVC {
         let board = UIStoryboard(name: "Main", bundle: nil)
-        return board.instantiateViewController(withIdentifier: String(describing: self)) as! productViewController
+        return board.instantiateViewController(withIdentifier: String(describing: self)) as! putOrderVC
     }
     
     // MARK: - Lifecycle
@@ -52,7 +52,7 @@ class productViewController: UIViewController {
     }
     
     func LoadData() {
-        let allProducts = product.all()
+        let allProducts = Product.all()
     
     }
     
@@ -169,7 +169,7 @@ class productViewController: UIViewController {
     
 }
 
-extension productViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
      func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
