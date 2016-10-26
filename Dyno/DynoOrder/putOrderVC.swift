@@ -21,7 +21,9 @@ class putOrderVC: UIViewController {
     @IBOutlet fileprivate weak var containerView: UIView!
   //  @IBOutlet fileprivate weak var scrollView: UIScrollView!
     fileprivate lazy var viewControllers: [UIViewController] = []
-    var items:[Dish] = []
+    var realm:Realm!
+    var products: Results<Product>!
+
     
     // MARK: - Init
     
@@ -34,7 +36,7 @@ class putOrderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let realm = try! Realm(configuration: RealmConfig.Main.configuration)
+         realm = try! Realm(configuration: RealmConfig.Main.configuration)
         
         switch segmentioStyle {
         case .onlyLabel, .imageBeforeLabel, .imageAfterLabel:
@@ -52,7 +54,9 @@ class putOrderVC: UIViewController {
     }
     
     func LoadData() {
-        let allProducts = Product.all()
+        products = Product.all(realm: realm)
+        print(products.count)
+   
     
     }
     
@@ -177,12 +181,12 @@ extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
   
-        return items.count
+        return products.count
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCell
-        cell.setData(item: items[indexPath.row], index: indexPath.row)
+        cell.setData(item: products[indexPath.row], index: indexPath.row)
         
         
         return cell

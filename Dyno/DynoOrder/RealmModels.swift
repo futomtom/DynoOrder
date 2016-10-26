@@ -9,9 +9,9 @@ class PurchaseItem: Object {
     dynamic var subtotal = 0
     
     
-    func getSubtotal () -> Int {
-        return product!.price * amount
-    }
+   /* func getSubtotal () -> Int {
+        return (product?.price)! * amount
+    }*/
     
 }
 
@@ -33,8 +33,8 @@ class Product: Object {
   dynamic var price = 0
   dynamic var type = 0
     
-   static func all() -> Results<Product> {
-        let realm = try! Realm()
+    static func all(realm:Realm) -> Results<Product> {
+        
         return realm.objects(Product.self)
     }
     

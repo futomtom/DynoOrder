@@ -14,7 +14,7 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var TitleLabel: UILabel!
     let colors = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.cyan, UIColor.gray,UIColor.brown, UIColor.orange ]
     
-    func setData(item: Dish, index:Int) {
+    func setData(item: Product, index:Int) {
        // imageV.image = UIImage(name: "   ")
         TitleLabel.text = item.name
         backgroundColor = colors[index%colors.count]
