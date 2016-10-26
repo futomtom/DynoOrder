@@ -16,7 +16,7 @@ class ItemDetailCell: UITableViewCell {
     }
 
     func displayData(item:PurchaseItem) {
-        textLabel?.text = item.product.name
+        textLabel?.text = item.product?.name
         detailTextLabel?.text = "\(item.getSubtotal())"
         
     }

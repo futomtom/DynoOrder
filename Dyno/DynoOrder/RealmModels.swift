@@ -3,14 +3,14 @@ import RealmSwift
 
 
 class PurchaseItem: Object {
-    dynamic var product = Product()
+    dynamic var product:Product?
     dynamic var amount = 0
     dynamic var type = 0
     dynamic var subtotal = 0
     
     
     func getSubtotal () -> Int {
-        return product.price * amount
+        return product!.price * amount
     }
     
 }
@@ -35,7 +35,7 @@ class Product: Object {
     
    static func all() -> Results<Product> {
         let realm = try! Realm()
-        return realm.objects(Product)
+        return realm.objects(Product.self)
     }
     
     
@@ -48,7 +48,7 @@ class DaySale: Object {
   dynamic var total  = 0
 }
 
-class MonthSales: Object {
+class MonthSale: Object {
     dynamic var name = ""
     let daySalesList = List<DaySale>()
     dynamic var total  = 0

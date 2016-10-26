@@ -49,8 +49,6 @@ enum RealmConfig {
     switch self {
     case .Main:
         DispatchQueue.once(token: "com.vectorform.test") {
-            let t = Bundle.main.url(forResource: "default", withExtension: "realm")
-            let u = RealmConfig.mainConfig.fileURL!
             self.copyInitialData(
                 from: Bundle.main.url(forResource: "default", withExtension: "realm")!,
                 to: RealmConfig.mainConfig.fileURL!)
