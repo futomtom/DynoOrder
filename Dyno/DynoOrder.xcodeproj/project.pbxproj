@@ -12,6 +12,7 @@
 		82DBF8701DBC9D0E00633DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */; };
 		D05EFD8A3D8EBD6A0C9570D3 /* Pods_DynoOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */; };
 		FA06006D1DBC3580003DB77F /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06006C1DBC3580003DB77F /* RealmModels.swift */; };
+		FA11883A1DC05A1700DDF494 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 82DBF86C1DBC9B4300633DA8 /* default.realm */; };
 		FA55C2A51DB99AF40079F9D0 /* putOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A41DB99AF40079F9D0 /* putOrderVC.swift */; };
 		FA55C2A71DB99D470079F9D0 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A61DB99D470079F9D0 /* ColorPalette.swift */; };
 		FA55C2A91DB99D570079F9D0 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55C2A81DB99D570079F9D0 /* UIColor+RGB.swift */; };
@@ -241,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA11883A1DC05A1700DDF494 /* default.realm in Resources */,
 				FA9803D61DB9795700C6F4C9 /* LaunchScreen.storyboard in Resources */,
 				FA9803D31DB9795700C6F4C9 /* Assets.xcassets in Resources */,
 				FA9803D11DB9795700C6F4C9 /* Main.storyboard in Resources */,
