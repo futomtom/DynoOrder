@@ -195,6 +195,10 @@ extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(products[indexPath.row].name) 
+        
+        
+        
         let cell = collectionView.cellForItem(at: indexPath)
         
         
