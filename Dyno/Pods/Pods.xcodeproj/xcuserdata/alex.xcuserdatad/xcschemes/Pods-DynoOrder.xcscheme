@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C50C09988203FF574FDF611491DB9E2"
+               BlueprintIdentifier = "E4FA85363D12DBB394475A9D07F1EEF7"
                BuildableName = "Pods_DynoOrder.framework"
                BlueprintName = "Pods-DynoOrder"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C50C09988203FF574FDF611491DB9E2"
+            BlueprintIdentifier = "E4FA85363D12DBB394475A9D07F1EEF7"
             BuildableName = "Pods_DynoOrder.framework"
             BlueprintName = "Pods-DynoOrder"
             ReferencedContainer = "container:Pods.xcodeproj">

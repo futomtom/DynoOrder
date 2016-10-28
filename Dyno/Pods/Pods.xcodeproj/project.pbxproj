@@ -7,143 +7,170 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D643117E8E01DD7BE9B25529ED54EA /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268B2A43D7BE8A4400E38677348A5D6 /* RoundImageView.swift */; };
-		2BFC5ED441A06BAB063A0AD63CDF6C80 /* Segmentio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B3902FAC6F3A10D04218A7EB24428 /* Segmentio.swift */; };
-		2D24330F6F530C1092635C4CF55B0D75 /* BadgeWithCounterViewBigSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD10FB77F8EF41257884E0CE4156E09 /* BadgeWithCounterViewBigSized.xib */; };
-		4BEE5BB85642318C3EAB84B9552ADD0E /* SegmentioOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586B2B2F2FE3EF2EADBEC0059AB86C81 /* SegmentioOptions.swift */; };
-		4F0E100321EC08FD1E83DD8C4B84C103 /* SegmentioCellWithImageBeforeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC8A02E2EF75359C1B62DBAC89ECC0 /* SegmentioCellWithImageBeforeLabel.swift */; };
-		7721405EA356A15FFCC9EF1DA16EE48C /* SegmentioCellWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFABD951FC05F32ED214F71A93569E /* SegmentioCellWithLabel.swift */; };
-		790B4CDF8605DC8984577146396A2D23 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */; };
-		791D0C2DE9EAB5C28E36B20AC2501CE1 /* Segmentio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BADA6784B4225E9CDFB1483EB12F8D /* Segmentio-dummy.m */; };
-		7BC97FD4875046298DC958F06DC79965 /* BadgeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7AD5F3DD52EC6A2BB403E1AD42636 /* BadgeViewPresenter.swift */; };
-		846B09D115A5E480F33A5B3EB028D614 /* SegmentioCellWithImageOverLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272CDDCC54C39FB28C5168CDCAC1672 /* SegmentioCellWithImageOverLabel.swift */; };
-		8A3770ACB8BA0A170A3195654A7F8769 /* Pods-DynoOrder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB58AD54EB689D6DCFEE7CF8306EBDB /* Pods-DynoOrder-dummy.m */; };
-		8E846AED90BBBD9DA2B51341E6DCB6B7 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */; };
-		8F5042A8FC97DB1176E5212FD2ABDFF1 /* BadgeWithCounterViewStandardSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10FC54E131237C693888B1730E28E401 /* BadgeWithCounterViewStandardSized.xib */; };
-		8F51F9337C295477AE225E0530B23B5A /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */; };
-		909C907A4BCC6F7347DBEDF70F60B3AB /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B45F843A9CEEFBFA83FD73D8758D7 /* UIView+Appearance.swift */; };
-		91A29A6CB5134255C5E8B5EF823272CB /* Pods-DynoOrder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82583D709522E7B11F469FE4C7AC994E /* Pods-DynoOrder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94B1B7E0B936044D2660A348B9356C0B /* Segmentio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D927646733FCC96C227598FD4C74D98 /* Segmentio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9793E0C9802D5633AC5FC15D44DF5F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A900558107C32ADC276DEA8918538667 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB19656C159D77FF60DE6C3E1A207D7D /* SegmentioCellWithImageUnderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B220BC953999724E7F424A1134E2AE9 /* SegmentioCellWithImageUnderLabel.swift */; };
-		AB7CF27D5EC9558ED74CBA28A7D606E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B8E8832D132966A3F332423AF9B50AC2 /* BadgeWithCounterViewBigSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD10FB77F8EF41257884E0CE4156E09 /* BadgeWithCounterViewBigSized.xib */; };
-		CC2D7795E71C0986BEB28641850E6A9E /* Segmentio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5CD567F580168145C78C6546CDAED591 /* Segmentio.bundle */; };
-		DE184E422EBB959B37C7A8D1873A5BA8 /* SegmentioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD79B8FB2741D3A59F952C2F2D54669 /* SegmentioCell.swift */; };
-		E27B00707FFAD860D240B743D472DA87 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */; };
-		EC0F9F88E999AACE1EC56C85B8C56B08 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */; };
-		EED279BB6ADDF31EE965D90FB14086CF /* BadgeWithCounterViewStandardSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10FC54E131237C693888B1730E28E401 /* BadgeWithCounterViewStandardSized.xib */; };
-		EF3F34D5E14F968336029143EEC002FD /* BadgeWithCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E91D1846A95CA6F6EC7B99DE78584 /* BadgeWithCounterView.swift */; };
-		F2CC9607B697F3358846DECDDBB57B3B /* SegmentioCellWithImageAfterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19962F9ED5BFAD99F628B8EA897DE1 /* SegmentioCellWithImageAfterLabel.swift */; };
-		F625746A6E3FD09D9593D7EA7CAC93C4 /* SegmentioCellWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9AE000ED9C68DE22DF9E7EB00E080 /* SegmentioCellWithImage.swift */; };
-		F7E1BFB855197D920F15F3FE16A11C8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		0D66848F3240AB454780E5B0F439FB56 /* SegmentioCellWithImageUnderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B220BC953999724E7F424A1134E2AE9 /* SegmentioCellWithImageUnderLabel.swift */; };
+		0E5ED794A43815C58925691CA2ED6528 /* BadgeWithCounterViewBigSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD10FB77F8EF41257884E0CE4156E09 /* BadgeWithCounterViewBigSized.xib */; };
+		107EB5EA1994A917C053D6C1FDE53282 /* Pods-DynoOrder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82583D709522E7B11F469FE4C7AC994E /* Pods-DynoOrder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10E7054BD24A8956FCACDD07FF3D2B3E /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A505F27452AA371746EF689C4D52C5A /* SideMenuManager.swift */; };
+		19CE95F082285DDBB590CB95C15B0518 /* SegmentioOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586B2B2F2FE3EF2EADBEC0059AB86C81 /* SegmentioOptions.swift */; };
+		2050C7D87BD29393EAB9612C69CC6EC6 /* SegmentioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD79B8FB2741D3A59F952C2F2D54669 /* SegmentioCell.swift */; };
+		2D739B145BC1E48909ABA45BABE8AFE6 /* ValueStepper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B3BE223248693C06B7AEA477D860C5 /* ValueStepper-dummy.m */; };
+		2EE21D147FB335FF43CF2F224ACE3112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3690465A77F7153B5ADF1B6D132D1F7A /* BadgeWithCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E91D1846A95CA6F6EC7B99DE78584 /* BadgeWithCounterView.swift */; };
+		3F18A811E4BF96341AE9C4F53CFC2571 /* Segmentio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D927646733FCC96C227598FD4C74D98 /* Segmentio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4060761370E90E3242B176A9BA83B781 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		434F58980329912A4CFA8DF90024BB17 /* ValueStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B216671ADAC4B56D6AFDF5C59168C67 /* ValueStepper.swift */; };
+		520674FD027997482CCE9D73F7A070C8 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE678F9DD76A3E980C4A81F451A4EC3 /* SideMenuTransition.swift */; };
+		52F94C1BEA1E763C2B73CD4C3CB36F92 /* SegmentioCellWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFABD951FC05F32ED214F71A93569E /* SegmentioCellWithLabel.swift */; };
+		5ABA97E0F8BDCE9CE54F4AFC0D64095A /* SegmentioCellWithImageAfterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19962F9ED5BFAD99F628B8EA897DE1 /* SegmentioCellWithImageAfterLabel.swift */; };
+		5BE2A9C7097747D5CCFCDB68C2368638 /* ValueStepper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 115971996B8C50FC558A548C63C7FC23 /* ValueStepper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A37332BF5245CADC03A94B3C9215B2 /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B45F843A9CEEFBFA83FD73D8758D7 /* UIView+Appearance.swift */; };
+		69DB55BE3DC08DEEFB2C4C84CBF3E075 /* SegmentioCellWithImageOverLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272CDDCC54C39FB28C5168CDCAC1672 /* SegmentioCellWithImageOverLabel.swift */; };
+		6D73FF98B71F3FFEAEA3CAA366479009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6EA8065CD7B3032A108E4F15D71F6196 /* BadgeWithCounterViewBigSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD10FB77F8EF41257884E0CE4156E09 /* BadgeWithCounterViewBigSized.xib */; };
+		77764207AE9C195C8C7D602D277E95AF /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268B2A43D7BE8A4400E38677348A5D6 /* RoundImageView.swift */; };
+		7B2BE3BE9E1F4D8AE687CBCE1F0708F4 /* Segmentio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B3902FAC6F3A10D04218A7EB24428 /* Segmentio.swift */; };
+		7BF757A947D19C9906272E8E8775FD5E /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BAF59BF3ECBE68CDCCA1AF95A54EE8 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9038665A6C7CAB586270846113F72AAF /* Segmentio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BADA6784B4225E9CDFB1483EB12F8D /* Segmentio-dummy.m */; };
+		9DB5F913BBFB702C78E89B0A963EFF1B /* BadgeWithCounterViewStandardSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10FC54E131237C693888B1730E28E401 /* BadgeWithCounterViewStandardSized.xib */; };
+		A25604E35EA7A746F3846F12A5AD1270 /* SegmentioCellWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9AE000ED9C68DE22DF9E7EB00E080 /* SegmentioCellWithImage.swift */; };
+		A3D712EC4E281AE52FDA25538F082963 /* BadgeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7AD5F3DD52EC6A2BB403E1AD42636 /* BadgeViewPresenter.swift */; };
+		C2C08274691D2BBF3F7BDB0C3FC203CE /* Pods-DynoOrder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB58AD54EB689D6DCFEE7CF8306EBDB /* Pods-DynoOrder-dummy.m */; };
+		D6BED6A38C5E289E753171F790425E2F /* BadgeWithCounterViewStandardSized.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10FC54E131237C693888B1730E28E401 /* BadgeWithCounterViewStandardSized.xib */; };
+		DCBD88465901810EC00573DBD0FEE698 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9986BC352AA954ADDC5C836AFE10BE7 /* UITableViewVibrantCell.swift */; };
+		E3A31562619A7A4AC1C98C8754116367 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CFFFCA01AE3BF49BCAE264CA21B80 /* UISideMenuNavigationController.swift */; };
+		F1C41FF85BF68345362AB9667FB2D7BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F4C0ADB6B9908537000DCF280B4F58D1 /* Segmentio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E87289AC747238C26EFFB6A2EAB00C1 /* Segmentio.bundle */; };
+		F4CD376A2D0F298B7F9C18BBBEB7614F /* SegmentioCellWithImageBeforeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC8A02E2EF75359C1B62DBAC89ECC0 /* SegmentioCellWithImageBeforeLabel.swift */; };
+		F77C46DA5850A64BF33156D34087656F /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2985037E2F1117334966801D7A177 /* SideMenu-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		512A81492EB8A5AA6265B1614150E3BB /* PBXContainerItemProxy */ = {
+		02A819369241A5ABF364E4BC11CB2469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A8BEC5A3B8A795497A444590502F83F;
+			remoteGlobalIDString = 053A6464AE20B76D5A0326711E8AFB3E;
+			remoteInfo = ValueStepper;
+		};
+		2A73CB8375F823F9EA36E33D0BCD1195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16870AC23524B6B41F6B397EE534168C;
+			remoteInfo = Segmentio;
+		};
+		338FED6C9E877E5BF29508CF0CC3054C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6BD762EF58BDA1163924E06792B00E7;
 			remoteInfo = SideMenu;
 		};
-		A6010DA6A483A0DF49D0BA68702F602C /* PBXContainerItemProxy */ = {
+		D461B4B7996BD03336316F45736AC275 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 54DF8EE10CA93313E0FF6F19A6EFE2B2;
+			remoteGlobalIDString = 0CE9612F71F1FC54C6AB2C1D5AB2AB1D;
 			remoteInfo = "Segmentio-Segmentio";
-		};
-		BDCC13745A856E804E158CA6143F89C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 406670A618C6375FEB09E18AED5E6C27;
-			remoteInfo = Segmentio;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
 		0691D0A9CBCDE9C18A33F70D06F1794E /* Pods-DynoOrder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynoOrder-resources.sh"; sourceTree = "<group>"; };
 		0731B9C29F49ADCD1F4805D34FAE6746 /* Pods-DynoOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynoOrder.release.xcconfig"; sourceTree = "<group>"; };
 		0B220BC953999724E7F424A1134E2AE9 /* SegmentioCellWithImageUnderLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithImageUnderLabel.swift; sourceTree = "<group>"; };
+		10DD70F9DEBFFD52B5375D86F9E32A94 /* ValueStepper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ValueStepper.modulemap; sourceTree = "<group>"; };
 		10FC54E131237C693888B1730E28E401 /* BadgeWithCounterViewStandardSized.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BadgeWithCounterViewStandardSized.xib; sourceTree = "<group>"; };
+		115971996B8C50FC558A548C63C7FC23 /* ValueStepper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValueStepper-umbrella.h"; sourceTree = "<group>"; };
+		1B7D0C36F74C6DD47CFBF8905F54DFB6 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		1E87289AC747238C26EFFB6A2EAB00C1 /* Segmentio.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Segmentio.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B7AD5F3DD52EC6A2BB403E1AD42636 /* BadgeViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeViewPresenter.swift; sourceTree = "<group>"; };
 		2268B2A43D7BE8A4400E38677348A5D6 /* RoundImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
-		24FFA10E4D12A78A27BA07E3F28068B1 /* Segmentio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segmentio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		250CFFFCA01AE3BF49BCAE264CA21B80 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		25793C0ABA0BAA8C255E890DA59EF210 /* Pods-DynoOrder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DynoOrder.modulemap"; sourceTree = "<group>"; };
+		25A4FB761E770D88C8EC3C91AF13F475 /* ValueStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A19962F9ED5BFAD99F628B8EA897DE1 /* SegmentioCellWithImageAfterLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithImageAfterLabel.swift; sourceTree = "<group>"; };
 		2BD79B8FB2741D3A59F952C2F2D54669 /* SegmentioCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCell.swift; sourceTree = "<group>"; };
-		35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		3D927646733FCC96C227598FD4C74D98 /* Segmentio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Segmentio-umbrella.h"; sourceTree = "<group>"; };
+		4AE678F9DD76A3E980C4A81F451A4EC3 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		4C23E879292BAD3CDF0D27E25102C03C /* ResourceBundle-Segmentio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Segmentio-Info.plist"; sourceTree = "<group>"; };
 		586B2B2F2FE3EF2EADBEC0059AB86C81 /* SegmentioOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioOptions.swift; sourceTree = "<group>"; };
-		5CD567F580168145C78C6546CDAED591 /* Segmentio.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Segmentio.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B9AE000ED9C68DE22DF9E7EB00E080 /* SegmentioCellWithImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithImage.swift; sourceTree = "<group>"; };
 		670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Segmentio.xcconfig; sourceTree = "<group>"; };
-		6CF81980B2B851D5ED4718BC47020609 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		69B3BE223248693C06B7AEA477D860C5 /* ValueStepper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValueStepper-dummy.m"; sourceTree = "<group>"; };
 		6DB443FB8C922AB54323B91AE9C47910 /* Pods-DynoOrder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DynoOrder-frameworks.sh"; sourceTree = "<group>"; };
 		82583D709522E7B11F469FE4C7AC994E /* Pods-DynoOrder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DynoOrder-umbrella.h"; sourceTree = "<group>"; };
 		88CC8A02E2EF75359C1B62DBAC89ECC0 /* SegmentioCellWithImageBeforeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithImageBeforeLabel.swift; sourceTree = "<group>"; };
 		89DFABD951FC05F32ED214F71A93569E /* SegmentioCellWithLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithLabel.swift; sourceTree = "<group>"; };
+		8A505F27452AA371746EF689C4D52C5A /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		8B216671ADAC4B56D6AFDF5C59168C67 /* ValueStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueStepper.swift; path = Pod/Classes/ValueStepper.swift; sourceTree = "<group>"; };
+		8BA2985037E2F1117334966801D7A177 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		8C140D79EDB352C7E8A383D9C00B7BE6 /* Segmentio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Segmentio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		995DC884942ED5E9B85C72A343F9AB5D /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		A1A00DB5BA99785298FF700D45A35C9E /* Pods_DynoOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynoOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A83274BDC4F7305238CBBF602E4320 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65B45F843A9CEEFBFA83FD73D8758D7 /* UIView+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Appearance.swift"; sourceTree = "<group>"; };
+		A85B73BBD80D2D61DF96EAACAC439028 /* Pods_DynoOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynoOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD2C2162AF8C654C2F8B5E779E3D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94E91D1846A95CA6F6EC7B99DE78584 /* BadgeWithCounterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeWithCounterView.swift; sourceTree = "<group>"; };
-		A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		B0DD24A9051DC44C947F6157125A9809 /* Pods-DynoOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DynoOrder.debug.xcconfig"; sourceTree = "<group>"; };
 		B272CDDCC54C39FB28C5168CDCAC1672 /* SegmentioCellWithImageOverLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SegmentioCellWithImageOverLabel.swift; sourceTree = "<group>"; };
+		B47DAC6FF866CD97B2DEE3D05F535C06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB81BA0C4DD8E0FFE0FEF5787909801E /* Pods-DynoOrder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DynoOrder-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC4B3902FAC6F3A10D04218A7EB24428 /* Segmentio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Segmentio.swift; sourceTree = "<group>"; };
 		BD92566C590A3C262D38930F208F3C50 /* Segmentio-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Segmentio-prefix.pch"; sourceTree = "<group>"; };
 		C3BADA6784B4225E9CDFB1483EB12F8D /* Segmentio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Segmentio-dummy.m"; sourceTree = "<group>"; };
+		C9986BC352AA954ADDC5C836AFE10BE7 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		CB94B63372D7835D72C21AC24ED6A56B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CCCF654A107CF9744FDC3C0970E34266 /* Segmentio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Segmentio.modulemap; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD26E04CFB9F95069CE450723A2611C0 /* ValueStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValueStepper-prefix.pch"; sourceTree = "<group>"; };
 		D339E2A435CCFD45C0766544FA454EB6 /* Pods-DynoOrder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DynoOrder-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4BAF59BF3ECBE68CDCCA1AF95A54EE8 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		D66A472B1BDE691AAF78CFF87C09A8BF /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
 		DA2428390EE76A3BC1B3E115B441FC48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB58AD54EB689D6DCFEE7CF8306EBDB /* Pods-DynoOrder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DynoOrder-dummy.m"; sourceTree = "<group>"; };
-		E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		EE2AD320258FA0A32C9E89B332B802B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		E747563D3E7A30ADCE133661D829DBB1 /* ValueStepper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValueStepper.xcconfig; sourceTree = "<group>"; };
+		F42CC46985F69F7A2BDE75BD80D7703E /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		FBD10FB77F8EF41257884E0CE4156E09 /* BadgeWithCounterViewBigSized.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BadgeWithCounterViewBigSized.xib; sourceTree = "<group>"; };
-		FC0BD2A3E45C40B9C9716812311BF563 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B60231D31973FC599775EA5D6C8C9594 /* Frameworks */ = {
+		01354C76B6D5547ED6017D593A4BEA38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9793E0C9802D5633AC5FC15D44DF5F44 /* Foundation.framework in Frameworks */,
+				2EE21D147FB335FF43CF2F224ACE3112 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB83961B92135A909D97825CFEA19680 /* Frameworks */ = {
+		09264878D7F73DEAD5BACD37EAFCB304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E1BFB855197D920F15F3FE16A11C8B /* Foundation.framework in Frameworks */,
+				F1C41FF85BF68345362AB9667FB2D7BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D08FBAC2F091D84C1469E392965FBB36 /* Frameworks */ = {
+		15E897B9B3EF8CE1FBCD010F3043E673 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4060761370E90E3242B176A9BA83B781 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E83E0EC603D9B137DB83CB7A05E28773 /* Frameworks */ = {
+		862D3B8B5412942BC4D6D15727F7939A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7CF27D5EC9558ED74CBA28A7D606E2 /* Foundation.framework in Frameworks */,
+				6D73FF98B71F3FFEAEA3CAA366479009 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23114BAB9B1B7D793B4E0C5BDF43943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +183,34 @@
 				5979BF96F3C46168EB85ACDF4B1FD2D9 /* Pods-DynoOrder */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0ED2024C67BB0A69653B60D02DDC5A3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB94B63372D7835D72C21AC24ED6A56B /* Info.plist */,
+				F42CC46985F69F7A2BDE75BD80D7703E /* SideMenu.modulemap */,
+				D66A472B1BDE691AAF78CFF87C09A8BF /* SideMenu.xcconfig */,
+				8BA2985037E2F1117334966801D7A177 /* SideMenu-dummy.m */,
+				1B7D0C36F74C6DD47CFBF8905F54DFB6 /* SideMenu-prefix.pch */,
+				D4BAF59BF3ECBE68CDCCA1AF95A54EE8 /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		0FFD8E93E2A987F7CF60F885C2DD1FE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B47DAC6FF866CD97B2DEE3D05F535C06 /* Info.plist */,
+				10DD70F9DEBFFD52B5375D86F9E32A94 /* ValueStepper.modulemap */,
+				E747563D3E7A30ADCE133661D829DBB1 /* ValueStepper.xcconfig */,
+				69B3BE223248693C06B7AEA477D860C5 /* ValueStepper-dummy.m */,
+				CD26E04CFB9F95069CE450723A2611C0 /* ValueStepper-prefix.pch */,
+				115971996B8C50FC558A548C63C7FC23 /* ValueStepper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ValueStepper";
 			sourceTree = "<group>";
 		};
 		19088E174C0C40179A7D4E680BCA25BC /* Views */ = {
@@ -175,20 +230,37 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		46FE5B12CE320C714F575DAD0DB36B42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				A85B73BBD80D2D61DF96EAACAC439028 /* Pods_DynoOrder.framework */,
+				1E87289AC747238C26EFFB6A2EAB00C1 /* Segmentio.bundle */,
+				8C140D79EDB352C7E8A383D9C00B7BE6 /* Segmentio.framework */,
+				A2A83274BDC4F7305238CBBF602E4320 /* SideMenu.framework */,
+				25A4FB761E770D88C8EC3C91AF13F475 /* ValueStepper.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+		4A59A683209E2939916C4F3C47E21EF7 /* ValueStepper */ = {
 			isa = PBXGroup;
 			children = (
-				6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */,
+				8B216671ADAC4B56D6AFDF5C59168C67 /* ValueStepper.swift */,
+				0FFD8E93E2A987F7CF60F885C2DD1FE9 /* Support Files */,
 			);
-			name = Pods;
+			path = ValueStepper;
+			sourceTree = "<group>";
+		};
+		52494F0859067CB5D3903FF34B125FCF /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8A505F27452AA371746EF689C4D52C5A /* SideMenuManager.swift */,
+				4AE678F9DD76A3E980C4A81F451A4EC3 /* SideMenuTransition.swift */,
+				250CFFFCA01AE3BF49BCAE264CA21B80 /* UISideMenuNavigationController.swift */,
+				C9986BC352AA954ADDC5C836AFE10BE7 /* UITableViewVibrantCell.swift */,
+				0ED2024C67BB0A69653B60D02DDC5A3C /* Support Files */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		5979BF96F3C46168EB85ACDF4B1FD2D9 /* Pods-DynoOrder */ = {
@@ -217,18 +289,6 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */,
-				A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */,
-				EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */,
-				38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */,
-				F9853A6F97D22D33E240344F832559E2 /* Support Files */,
-			);
-			path = SideMenu;
-			sourceTree = "<group>";
-		};
 		6D3F4095995BEF98F4DD0129A4F3C3E6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,15 +305,12 @@
 			path = Segmentio;
 			sourceTree = "<group>";
 		};
-		77DB9F488DA0C251BB9FF2E329134628 /* Products */ = {
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A1A00DB5BA99785298FF700D45A35C9E /* Pods_DynoOrder.framework */,
-				5CD567F580168145C78C6546CDAED591 /* Segmentio.bundle */,
-				24FFA10E4D12A78A27BA07E3F28068B1 /* Segmentio.framework */,
-				EE2AD320258FA0A32C9E89B332B802B6 /* SideMenu.framework */,
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -262,8 +319,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				6D3F4095995BEF98F4DD0129A4F3C3E6 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
-				77DB9F488DA0C251BB9FF2E329134628 /* Products */,
+				F2E9BB764F16C832D3E08C659AA768B7 /* Pods */,
+				46FE5B12CE320C714F575DAD0DB36B42 /* Products */,
 				056608F9BFAB8F0884E3F8A58A5C9666 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -339,7 +396,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,95 +427,77 @@
 			path = "Dyno/Pods/Target Support Files/Segmentio";
 			sourceTree = "<group>";
 		};
-		F9853A6F97D22D33E240344F832559E2 /* Support Files */ = {
+		F2E9BB764F16C832D3E08C659AA768B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC0BD2A3E45C40B9C9716812311BF563 /* Info.plist */,
-				995DC884942ED5E9B85C72A343F9AB5D /* SideMenu.modulemap */,
-				FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */,
-				35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */,
-				6CF81980B2B851D5ED4718BC47020609 /* SideMenu-prefix.pch */,
-				E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */,
+				52494F0859067CB5D3903FF34B125FCF /* SideMenu */,
+				4A59A683209E2939916C4F3C47E21EF7 /* ValueStepper */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		79FE4D6013FA42E3426C47897122CEAE /* Headers */ = {
+		18AE9D78F1C897741CA5FCCDC5DC2AF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A29A6CB5134255C5E8B5EF823272CB /* Pods-DynoOrder-umbrella.h in Headers */,
+				3F18A811E4BF96341AE9C4F53CFC2571 /* Segmentio-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D7FF065A38D5FE6275D59F9F49C398E /* Headers */ = {
+		4FB13142F462060E80D49A737167949B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A900558107C32ADC276DEA8918538667 /* SideMenu-umbrella.h in Headers */,
+				7BF757A947D19C9906272E8E8775FD5E /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8A2DF4F0C50354B56427D066EE279A6 /* Headers */ = {
+		69F144A7B2E6C04B4302BB447F5AA6B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94B1B7E0B936044D2660A348B9356C0B /* Segmentio-umbrella.h in Headers */,
+				107EB5EA1994A917C053D6C1FDE53282 /* Pods-DynoOrder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85E61623DDB614D5A8998C3DC6523C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE2A9C7097747D5CCFCDB68C2368638 /* ValueStepper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C50C09988203FF574FDF611491DB9E2 /* Pods-DynoOrder */ = {
+		053A6464AE20B76D5A0326711E8AFB3E /* ValueStepper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1753F84990DE669D00419BE79223F8AA /* Build configuration list for PBXNativeTarget "Pods-DynoOrder" */;
+			buildConfigurationList = 16B6D4DAD622E8D64B522B0A3EAD597D /* Build configuration list for PBXNativeTarget "ValueStepper" */;
 			buildPhases = (
-				89CB251035DEA084BCF6F9095A9CE93B /* Sources */,
-				CB83961B92135A909D97825CFEA19680 /* Frameworks */,
-				79FE4D6013FA42E3426C47897122CEAE /* Headers */,
+				71AEB7F42CA6A28D91344F3389CCE373 /* Sources */,
+				862D3B8B5412942BC4D6D15727F7939A /* Frameworks */,
+				E85E61623DDB614D5A8998C3DC6523C6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				56FC783693A5FDD4CE3C8277F06837F9 /* PBXTargetDependency */,
-				8867D7CAF9446526CC75EB5C0B589C04 /* PBXTargetDependency */,
 			);
-			name = "Pods-DynoOrder";
-			productName = "Pods-DynoOrder";
-			productReference = A1A00DB5BA99785298FF700D45A35C9E /* Pods_DynoOrder.framework */;
+			name = ValueStepper;
+			productName = ValueStepper;
+			productReference = 25A4FB761E770D88C8EC3C91AF13F475 /* ValueStepper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		406670A618C6375FEB09E18AED5E6C27 /* Segmentio */ = {
+		0CE9612F71F1FC54C6AB2C1D5AB2AB1D /* Segmentio-Segmentio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08BFCBB825C3542781D780C89FD90478 /* Build configuration list for PBXNativeTarget "Segmentio" */;
+			buildConfigurationList = 06953E97DC9E48182255E87FB008DCD6 /* Build configuration list for PBXNativeTarget "Segmentio-Segmentio" */;
 			buildPhases = (
-				FC5DAABDA820973DC336136D09F333AC /* Sources */,
-				B60231D31973FC599775EA5D6C8C9594 /* Frameworks */,
-				A921E942D9AAE1E9BDB03C5CE1A32A02 /* Resources */,
-				C8A2DF4F0C50354B56427D066EE279A6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B5E9AE96BA1242EC8E3820438A48E61 /* PBXTargetDependency */,
-			);
-			name = Segmentio;
-			productName = Segmentio;
-			productReference = 24FFA10E4D12A78A27BA07E3F28068B1 /* Segmentio.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		54DF8EE10CA93313E0FF6F19A6EFE2B2 /* Segmentio-Segmentio */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 157F612CE4BC9603E92897BE45AA1B5C /* Build configuration list for PBXNativeTarget "Segmentio-Segmentio" */;
-			buildPhases = (
-				145918403B9B8AF07776CFA40F8D2EDD /* Sources */,
-				D08FBAC2F091D84C1469E392965FBB36 /* Frameworks */,
-				716D846D48F28EB49D0CDE7145E144FA /* Resources */,
+				D4D3AB4994EE5DEFA949D9E9BDF8D007 /* Sources */,
+				E23114BAB9B1B7D793B4E0C5BDF43943 /* Frameworks */,
+				1FAC51A7D9F09C63313C57BFE130105E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -466,16 +505,35 @@
 			);
 			name = "Segmentio-Segmentio";
 			productName = "Segmentio-Segmentio";
-			productReference = 5CD567F580168145C78C6546CDAED591 /* Segmentio.bundle */;
+			productReference = 1E87289AC747238C26EFFB6A2EAB00C1 /* Segmentio.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		8A8BEC5A3B8A795497A444590502F83F /* SideMenu */ = {
+		16870AC23524B6B41F6B397EE534168C /* Segmentio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9AA7CC66EA6A100BABDF904CDAE8BD3 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildConfigurationList = 936B9AEEFBD2A3D6FA92E59419D4D891 /* Build configuration list for PBXNativeTarget "Segmentio" */;
 			buildPhases = (
-				FA9182C6E4CD37D184EA34F0E6B768EB /* Sources */,
-				E83E0EC603D9B137DB83CB7A05E28773 /* Frameworks */,
-				8D7FF065A38D5FE6275D59F9F49C398E /* Headers */,
+				42DFFCF3C2D15F5B54BA329FBC840DCA /* Sources */,
+				15E897B9B3EF8CE1FBCD010F3043E673 /* Frameworks */,
+				2A11965483A42AD00F70137A1FE60B17 /* Resources */,
+				18AE9D78F1C897741CA5FCCDC5DC2AF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB510E50B2F615CE6D9B631FF37C242F /* PBXTargetDependency */,
+			);
+			name = Segmentio;
+			productName = Segmentio;
+			productReference = 8C140D79EDB352C7E8A383D9C00B7BE6 /* Segmentio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6BD762EF58BDA1163924E06792B00E7 /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD47A97E2C4A406AFC15C3DB770B54 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				FFB6D55B1C0F918C5D0638733AD2D503 /* Sources */,
+				01354C76B6D5547ED6017D593A4BEA38 /* Frameworks */,
+				4FB13142F462060E80D49A737167949B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -483,7 +541,27 @@
 			);
 			name = SideMenu;
 			productName = SideMenu;
-			productReference = EE2AD320258FA0A32C9E89B332B802B6 /* SideMenu.framework */;
+			productReference = A2A83274BDC4F7305238CBBF602E4320 /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4FA85363D12DBB394475A9D07F1EEF7 /* Pods-DynoOrder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679E39ACE7C9287F89A70D8012F3D02A /* Build configuration list for PBXNativeTarget "Pods-DynoOrder" */;
+			buildPhases = (
+				37CA2AB998DD1F60558BF3A359C712E0 /* Sources */,
+				09264878D7F73DEAD5BACD37EAFCB304 /* Frameworks */,
+				69F144A7B2E6C04B4302BB447F5AA6B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265F775C3121BB230E1A645A2BA37AC3 /* PBXTargetDependency */,
+				2A39E54A37B92AFC4CEF73AA2B0254AC /* PBXTargetDependency */,
+				FD4DF3D1978F727FD36B57D78500C81E /* PBXTargetDependency */,
+			);
+			name = "Pods-DynoOrder";
+			productName = "Pods-DynoOrder";
+			productReference = A85B73BBD80D2D61DF96EAACAC439028 /* Pods_DynoOrder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -503,109 +581,125 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 77DB9F488DA0C251BB9FF2E329134628 /* Products */;
+			productRefGroup = 46FE5B12CE320C714F575DAD0DB36B42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C50C09988203FF574FDF611491DB9E2 /* Pods-DynoOrder */,
-				406670A618C6375FEB09E18AED5E6C27 /* Segmentio */,
-				54DF8EE10CA93313E0FF6F19A6EFE2B2 /* Segmentio-Segmentio */,
-				8A8BEC5A3B8A795497A444590502F83F /* SideMenu */,
+				E4FA85363D12DBB394475A9D07F1EEF7 /* Pods-DynoOrder */,
+				16870AC23524B6B41F6B397EE534168C /* Segmentio */,
+				0CE9612F71F1FC54C6AB2C1D5AB2AB1D /* Segmentio-Segmentio */,
+				A6BD762EF58BDA1163924E06792B00E7 /* SideMenu */,
+				053A6464AE20B76D5A0326711E8AFB3E /* ValueStepper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		716D846D48F28EB49D0CDE7145E144FA /* Resources */ = {
+		1FAC51A7D9F09C63313C57BFE130105E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E8832D132966A3F332423AF9B50AC2 /* BadgeWithCounterViewBigSized.xib in Resources */,
-				EED279BB6ADDF31EE965D90FB14086CF /* BadgeWithCounterViewStandardSized.xib in Resources */,
+				0E5ED794A43815C58925691CA2ED6528 /* BadgeWithCounterViewBigSized.xib in Resources */,
+				D6BED6A38C5E289E753171F790425E2F /* BadgeWithCounterViewStandardSized.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A921E942D9AAE1E9BDB03C5CE1A32A02 /* Resources */ = {
+		2A11965483A42AD00F70137A1FE60B17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D24330F6F530C1092635C4CF55B0D75 /* BadgeWithCounterViewBigSized.xib in Resources */,
-				8F5042A8FC97DB1176E5212FD2ABDFF1 /* BadgeWithCounterViewStandardSized.xib in Resources */,
-				CC2D7795E71C0986BEB28641850E6A9E /* Segmentio.bundle in Resources */,
+				6EA8065CD7B3032A108E4F15D71F6196 /* BadgeWithCounterViewBigSized.xib in Resources */,
+				9DB5F913BBFB702C78E89B0A963EFF1B /* BadgeWithCounterViewStandardSized.xib in Resources */,
+				F4C0ADB6B9908537000DCF280B4F58D1 /* Segmentio.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		145918403B9B8AF07776CFA40F8D2EDD /* Sources */ = {
+		37CA2AB998DD1F60558BF3A359C712E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C08274691D2BBF3F7BDB0C3FC203CE /* Pods-DynoOrder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DFFCF3C2D15F5B54BA329FBC840DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3D712EC4E281AE52FDA25538F082963 /* BadgeViewPresenter.swift in Sources */,
+				3690465A77F7153B5ADF1B6D132D1F7A /* BadgeWithCounterView.swift in Sources */,
+				77764207AE9C195C8C7D602D277E95AF /* RoundImageView.swift in Sources */,
+				9038665A6C7CAB586270846113F72AAF /* Segmentio-dummy.m in Sources */,
+				7B2BE3BE9E1F4D8AE687CBCE1F0708F4 /* Segmentio.swift in Sources */,
+				2050C7D87BD29393EAB9612C69CC6EC6 /* SegmentioCell.swift in Sources */,
+				A25604E35EA7A746F3846F12A5AD1270 /* SegmentioCellWithImage.swift in Sources */,
+				5ABA97E0F8BDCE9CE54F4AFC0D64095A /* SegmentioCellWithImageAfterLabel.swift in Sources */,
+				F4CD376A2D0F298B7F9C18BBBEB7614F /* SegmentioCellWithImageBeforeLabel.swift in Sources */,
+				69DB55BE3DC08DEEFB2C4C84CBF3E075 /* SegmentioCellWithImageOverLabel.swift in Sources */,
+				0D66848F3240AB454780E5B0F439FB56 /* SegmentioCellWithImageUnderLabel.swift in Sources */,
+				52F94C1BEA1E763C2B73CD4C3CB36F92 /* SegmentioCellWithLabel.swift in Sources */,
+				19CE95F082285DDBB590CB95C15B0518 /* SegmentioOptions.swift in Sources */,
+				63A37332BF5245CADC03A94B3C9215B2 /* UIView+Appearance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71AEB7F42CA6A28D91344F3389CCE373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D739B145BC1E48909ABA45BABE8AFE6 /* ValueStepper-dummy.m in Sources */,
+				434F58980329912A4CFA8DF90024BB17 /* ValueStepper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D3AB4994EE5DEFA949D9E9BDF8D007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89CB251035DEA084BCF6F9095A9CE93B /* Sources */ = {
+		FFB6D55B1C0F918C5D0638733AD2D503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3770ACB8BA0A170A3195654A7F8769 /* Pods-DynoOrder-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA9182C6E4CD37D184EA34F0E6B768EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				790B4CDF8605DC8984577146396A2D23 /* SideMenu-dummy.m in Sources */,
-				E27B00707FFAD860D240B743D472DA87 /* SideMenuManager.swift in Sources */,
-				8E846AED90BBBD9DA2B51341E6DCB6B7 /* SideMenuTransition.swift in Sources */,
-				EC0F9F88E999AACE1EC56C85B8C56B08 /* UISideMenuNavigationController.swift in Sources */,
-				8F51F9337C295477AE225E0530B23B5A /* UITableViewVibrantCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC5DAABDA820973DC336136D09F333AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BC97FD4875046298DC958F06DC79965 /* BadgeViewPresenter.swift in Sources */,
-				EF3F34D5E14F968336029143EEC002FD /* BadgeWithCounterView.swift in Sources */,
-				03D643117E8E01DD7BE9B25529ED54EA /* RoundImageView.swift in Sources */,
-				791D0C2DE9EAB5C28E36B20AC2501CE1 /* Segmentio-dummy.m in Sources */,
-				2BFC5ED441A06BAB063A0AD63CDF6C80 /* Segmentio.swift in Sources */,
-				DE184E422EBB959B37C7A8D1873A5BA8 /* SegmentioCell.swift in Sources */,
-				F625746A6E3FD09D9593D7EA7CAC93C4 /* SegmentioCellWithImage.swift in Sources */,
-				F2CC9607B697F3358846DECDDBB57B3B /* SegmentioCellWithImageAfterLabel.swift in Sources */,
-				4F0E100321EC08FD1E83DD8C4B84C103 /* SegmentioCellWithImageBeforeLabel.swift in Sources */,
-				846B09D115A5E480F33A5B3EB028D614 /* SegmentioCellWithImageOverLabel.swift in Sources */,
-				AB19656C159D77FF60DE6C3E1A207D7D /* SegmentioCellWithImageUnderLabel.swift in Sources */,
-				7721405EA356A15FFCC9EF1DA16EE48C /* SegmentioCellWithLabel.swift in Sources */,
-				4BEE5BB85642318C3EAB84B9552ADD0E /* SegmentioOptions.swift in Sources */,
-				909C907A4BCC6F7347DBEDF70F60B3AB /* UIView+Appearance.swift in Sources */,
+				F77C46DA5850A64BF33156D34087656F /* SideMenu-dummy.m in Sources */,
+				10E7054BD24A8956FCACDD07FF3D2B3E /* SideMenuManager.swift in Sources */,
+				520674FD027997482CCE9D73F7A070C8 /* SideMenuTransition.swift in Sources */,
+				E3A31562619A7A4AC1C98C8754116367 /* UISideMenuNavigationController.swift in Sources */,
+				DCBD88465901810EC00573DBD0FEE698 /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B5E9AE96BA1242EC8E3820438A48E61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Segmentio-Segmentio";
-			target = 54DF8EE10CA93313E0FF6F19A6EFE2B2 /* Segmentio-Segmentio */;
-			targetProxy = A6010DA6A483A0DF49D0BA68702F602C /* PBXContainerItemProxy */;
-		};
-		56FC783693A5FDD4CE3C8277F06837F9 /* PBXTargetDependency */ = {
+		265F775C3121BB230E1A645A2BA37AC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Segmentio;
-			target = 406670A618C6375FEB09E18AED5E6C27 /* Segmentio */;
-			targetProxy = BDCC13745A856E804E158CA6143F89C4 /* PBXContainerItemProxy */;
+			target = 16870AC23524B6B41F6B397EE534168C /* Segmentio */;
+			targetProxy = 2A73CB8375F823F9EA36E33D0BCD1195 /* PBXContainerItemProxy */;
 		};
-		8867D7CAF9446526CC75EB5C0B589C04 /* PBXTargetDependency */ = {
+		2A39E54A37B92AFC4CEF73AA2B0254AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
-			target = 8A8BEC5A3B8A795497A444590502F83F /* SideMenu */;
-			targetProxy = 512A81492EB8A5AA6265B1614150E3BB /* PBXContainerItemProxy */;
+			target = A6BD762EF58BDA1163924E06792B00E7 /* SideMenu */;
+			targetProxy = 338FED6C9E877E5BF29508CF0CC3054C /* PBXContainerItemProxy */;
+		};
+		FB510E50B2F615CE6D9B631FF37C242F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Segmentio-Segmentio";
+			target = 0CE9612F71F1FC54C6AB2C1D5AB2AB1D /* Segmentio-Segmentio */;
+			targetProxy = D461B4B7996BD03336316F45736AC275 /* PBXContainerItemProxy */;
+		};
+		FD4DF3D1978F727FD36B57D78500C81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ValueStepper;
+			target = 053A6464AE20B76D5A0326711E8AFB3E /* ValueStepper */;
+			targetProxy = 02A819369241A5ABF364E4BC11CB2469 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -654,9 +748,9 @@
 			};
 			name = Debug;
 		};
-		2489774F1978A150A98ECED37BFCDE62 /* Release */ = {
+		3D239BA6976C9DB5CBA25BEEC8B0EEAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
+			baseConfigurationReference = 0731B9C29F49ADCD1F4805D34FAE6746 /* Pods-DynoOrder.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -669,57 +763,27 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Segmentio/Segmentio-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Segmentio/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DynoOrder/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Segmentio/Segmentio.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DynoOrder/Pods-DynoOrder.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Segmentio;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DynoOrder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		30E5170949A3E952181B65C8C0E3FAC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4F98CEE8387C8AEC2C05C42709913DE0 /* Debug */ = {
+		45E0CFA101F0AC4FB5D07755D3ECFC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0DD24A9051DC44C947F6157125A9809 /* Pods-DynoOrder.debug.xcconfig */;
 			buildSettings = {
@@ -755,7 +819,41 @@
 			};
 			name = Debug;
 		};
-		643816DDD811908D316EEA84A2B0D18C /* Debug */ = {
+		7852C20671C4F62B9D7D285B6C4A6091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Segmentio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BE244F18A65D876392E3E115E81159EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Segmentio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C2B9A1EBC517ECF8C34AB0C14EC12B81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
 			buildSettings = {
@@ -763,7 +861,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -776,8 +874,40 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Segmentio/Segmentio.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Segmentio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD537651D6C5AA53666906C5DB516C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E747563D3E7A30ADCE133661D829DBB1 /* ValueStepper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ValueStepper/ValueStepper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ValueStepper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ValueStepper/ValueStepper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ValueStepper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -788,50 +918,15 @@
 			};
 			name = Debug;
 		};
-		75C70B489BD2873E4BDDBB1FA7A8829F /* Release */ = {
+		E2227CF0E7F3DA7350777DA317D0D2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0731B9C29F49ADCD1F4805D34FAE6746 /* Pods-DynoOrder.release.xcconfig */;
+			baseConfigurationReference = D66A472B1BDE691AAF78CFF87C09A8BF /* SideMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DynoOrder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DynoOrder/Pods-DynoOrder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DynoOrder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78DCFFC388D72E4B38C91D98BD6789C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -844,48 +939,47 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E60967B1B506079991702CC5C37C6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E747563D3E7A30ADCE133661D829DBB1 /* ValueStepper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ValueStepper/ValueStepper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ValueStepper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ValueStepper/ValueStepper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ValueStepper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B7CB80DBE0A29261948754E8F9E2DC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Segmentio;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		CB98D6364C231F22227FED97928FE542 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Segmentio;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -929,32 +1023,88 @@
 			};
 			name = Release;
 		};
+		ED651893AF8F5509A9D6D5818CAB6A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66A472B1BDE691AAF78CFF87C09A8BF /* SideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7BC2A5EAA1F186956029C09E678CC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670584579B8CE20B1E7962D6A5C987A5 /* Segmentio.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Segmentio/Segmentio-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Segmentio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Segmentio/Segmentio.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Segmentio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08BFCBB825C3542781D780C89FD90478 /* Build configuration list for PBXNativeTarget "Segmentio" */ = {
+		06953E97DC9E48182255E87FB008DCD6 /* Build configuration list for PBXNativeTarget "Segmentio-Segmentio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643816DDD811908D316EEA84A2B0D18C /* Debug */,
-				2489774F1978A150A98ECED37BFCDE62 /* Release */,
+				BE244F18A65D876392E3E115E81159EC /* Debug */,
+				7852C20671C4F62B9D7D285B6C4A6091 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		157F612CE4BC9603E92897BE45AA1B5C /* Build configuration list for PBXNativeTarget "Segmentio-Segmentio" */ = {
+		16B6D4DAD622E8D64B522B0A3EAD597D /* Build configuration list for PBXNativeTarget "ValueStepper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B7CB80DBE0A29261948754E8F9E2DC5 /* Debug */,
-				CB98D6364C231F22227FED97928FE542 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1753F84990DE669D00419BE79223F8AA /* Build configuration list for PBXNativeTarget "Pods-DynoOrder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F98CEE8387C8AEC2C05C42709913DE0 /* Debug */,
-				75C70B489BD2873E4BDDBB1FA7A8829F /* Release */,
+				CD537651D6C5AA53666906C5DB516C60 /* Debug */,
+				E60967B1B506079991702CC5C37C6470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -968,11 +1118,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9AA7CC66EA6A100BABDF904CDAE8BD3 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		679E39ACE7C9287F89A70D8012F3D02A /* Build configuration list for PBXNativeTarget "Pods-DynoOrder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30E5170949A3E952181B65C8C0E3FAC0 /* Debug */,
-				78DCFFC388D72E4B38C91D98BD6789C1 /* Release */,
+				45E0CFA101F0AC4FB5D07755D3ECFC03 /* Debug */,
+				3D239BA6976C9DB5CBA25BEEC8B0EEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAD47A97E2C4A406AFC15C3DB770B54 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2227CF0E7F3DA7350777DA317D0D2F5 /* Debug */,
+				ED651893AF8F5509A9D6D5818CAB6A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936B9AEEFBD2A3D6FA92E59419D4D891 /* Build configuration list for PBXNativeTarget "Segmentio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7BC2A5EAA1F186956029C09E678CC9E /* Debug */,
+				C2B9A1EBC517ECF8C34AB0C14EC12B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

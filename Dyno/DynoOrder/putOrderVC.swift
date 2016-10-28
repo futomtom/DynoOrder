@@ -94,12 +94,12 @@ class putOrderVC: UIViewController {
     
     fileprivate func segmentioContent() -> [SegmentioItem] {
         return [
-            SegmentioItem(title: "Tornado", image: UIImage(named: "tornado")),
-            SegmentioItem(title: "Earthquakes", image: UIImage(named: "earthquakes")),
-            SegmentioItem(title: "Extreme heat", image: UIImage(named: "heat")),
-            SegmentioItem(title: "Eruption", image: UIImage(named: "eruption")),
-            SegmentioItem(title: "Floods", image: UIImage(named: "floods")),
-            SegmentioItem(title: "Wildfires", image: UIImage(named: "wildfires"))
+            SegmentioItem(title: "菜", image: UIImage(named: "tornado")),
+            SegmentioItem(title: "湯", image: UIImage(named: "earthquakes")),
+            SegmentioItem(title: "素", image: UIImage(named: "heat")),
+            SegmentioItem(title: "點心", image: UIImage(named: "eruption")),
+            SegmentioItem(title: "飲料", image: UIImage(named: "floods")),
+            SegmentioItem(title: "飯", image: UIImage(named: "wildfires"))
         ]
     }
     
@@ -161,15 +161,19 @@ class putOrderVC: UIViewController {
     fileprivate func segmentioVerticalSeparatorOptions() -> SegmentioVerticalSeparatorOptions {
         return SegmentioVerticalSeparatorOptions(ratio: 1, color: ColorPalette.whiteSmoke)
     }
-    
-    // Example viewControllers
-    
-   
-    
+
     fileprivate func selectedSegmentioIndex() -> Int {
         return 0
     }
-
+    
+    
+    @IBAction func StepperValueChange(_ sender: UIView) {
+        
+        
+        
+        
+    }
+    
     
 }
 
