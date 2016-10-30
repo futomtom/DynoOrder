@@ -488,21 +488,21 @@
                                 <rect key="frame" x="0.0" y="134" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AGl-lQ-bKS">
-                                    <size key="itemSize" width="116" height="108"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="itemSize" width="150" height="108"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="mtJ-Pj-c7k" customClass="ItemCell" customModule="DynoOrder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="108"/>
+                                        <rect key="frame" x="0.0" y="50" width="150" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="116" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-kk-l7E">
-                                                    <rect key="frame" x="8" y="44" width="100" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-kk-l7E" userLabel="Name">
+                                                    <rect key="frame" x="8" y="44" width="134" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="Eog-YY-4e6"/>
                                                     </constraints>
@@ -515,29 +515,46 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itN-tS-iX4" customClass="ValueStepper">
-                                                    <rect key="frame" x="0.0" y="79" width="116" height="29"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="tintColor" red="1" green="0.66274509800000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5GW-5B-Vaj">
+                                                    <rect key="frame" x="4" y="81" width="142" height="25"/>
+                                                    <subviews>
+                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UKq-zG-yGQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                                            <connections>
+                                                                <action selector="StepperValueChange:" destination="X3Q-Qd-BTR" eventType="valueChanged" id="MX2-00-BTn"/>
+                                                            </connections>
+                                                        </stepper>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9f-NS-fzP" userLabel="unit">
+                                                            <rect key="frame" x="71" y="2.5" width="71" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="Qx1-2w-i3J"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="Qx1-2w-i3J"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="29" id="5yd-NB-0t4"/>
+                                                        <constraint firstAttribute="height" constant="25" id="kcD-Xs-wgd"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <action selector="StepperValueChange:" destination="X3Q-Qd-BTR" eventType="valueChanged" id="Ahq-XE-EuU"/>
-                                                    </connections>
-                                                </view>
+                                                </stackView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="WpX-kk-l7E" firstAttribute="centerY" secondItem="mtJ-Pj-c7k" secondAttribute="centerY" id="ENw-MI-cqN"/>
                                             <constraint firstItem="WpX-kk-l7E" firstAttribute="centerX" secondItem="mtJ-Pj-c7k" secondAttribute="centerX" id="Eis-vz-BTP"/>
-                                            <constraint firstAttribute="bottom" secondItem="itN-tS-iX4" secondAttribute="bottom" id="PnC-SD-ZOo"/>
-                                            <constraint firstAttribute="trailing" secondItem="itN-tS-iX4" secondAttribute="trailing" id="Q49-Xs-no8"/>
                                             <constraint firstItem="WpX-kk-l7E" firstAttribute="leading" secondItem="mtJ-Pj-c7k" secondAttribute="leading" id="W9k-FB-Yo0"/>
+                                            <constraint firstItem="5GW-5B-Vaj" firstAttribute="leading" secondItem="mtJ-Pj-c7k" secondAttribute="leading" constant="4" id="ey7-dg-II7"/>
                                             <constraint firstItem="WpX-kk-l7E" firstAttribute="bottom" secondItem="mtJ-Pj-c7k" secondAttribute="bottomMargin" id="ifz-jp-ZZX"/>
                                             <constraint firstItem="WpX-kk-l7E" firstAttribute="top" secondItem="mtJ-Pj-c7k" secondAttribute="top" constant="8" id="jOM-1H-YGX"/>
-                                            <constraint firstItem="itN-tS-iX4" firstAttribute="leading" secondItem="mtJ-Pj-c7k" secondAttribute="leading" id="pmJ-WT-fOX"/>
+                                            <constraint firstAttribute="bottom" secondItem="5GW-5B-Vaj" secondAttribute="bottom" constant="2" id="lPN-Jy-gBG"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="WpX-kk-l7E" secondAttribute="trailing" id="sbF-pO-43T"/>
+                                            <constraint firstAttribute="trailing" secondItem="5GW-5B-Vaj" secondAttribute="trailing" constant="4" id="xQB-ID-w7K"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -547,11 +564,51 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <outlet property="TitleLabel" destination="WpX-kk-l7E" id="xRY-yI-FYM"/>
-                                            <outlet property="valueStepper" destination="itN-tS-iX4" id="uKF-Iw-Z7f"/>
+                                            <outlet property="name" destination="WpX-kk-l7E" id="C7L-fj-kZA"/>
+                                            <outlet property="number" destination="o9f-NS-fzP" id="0Fo-YC-ZEc"/>
+                                            <outlet property="stepper" destination="UKq-zG-yGQ" id="xX8-yW-8ie"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headview" id="rOp-sr-Gzo" customClass="CollectionHeadView" customModule="DynoOrder" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qaf-JZ-8vc" customClass="BorderedButton" customModule="DynoOrder" customModuleProvider="target">
+                                            <rect key="frame" x="43" y="10" width="34" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Start"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="StartOrder:" destination="X3Q-Qd-BTR" eventType="touchUpOutside" id="vpD-qv-FqK"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-As-ZUC" customClass="BorderedButton" customModule="DynoOrder" customModuleProvider="target">
+                                            <rect key="frame" x="159" y="10" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Clear"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="ClearOrder:" destination="X3Q-Qd-BTR" eventType="touchUpInside" id="lNh-hD-IhW"/>
+                                                <action selector="NewOrder:" destination="X3Q-Qd-BTR" eventType="touchUpInside" id="oKa-M8-XZv"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="X3Q-Qd-BTR" id="1CU-pF-nGj"/>
                                     <outlet property="delegate" destination="X3Q-Qd-BTR" id="C0E-25-ePG"/>

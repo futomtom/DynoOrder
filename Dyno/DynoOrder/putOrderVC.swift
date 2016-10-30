@@ -11,6 +11,7 @@ import Segmentio
 import SideMenu
 import RealmSwift
 
+
 class putOrderVC: UIViewController {
     
     var segmentioStyle = SegmentioStyle.imageBeforeLabel
@@ -23,6 +24,8 @@ class putOrderVC: UIViewController {
     fileprivate lazy var viewControllers: [UIViewController] = []
     var realm:Realm!
     var products: Results<Product>!
+    var order:Order!
+
 
     
     // MARK: - Init
@@ -37,6 +40,7 @@ class putOrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          realm = try! Realm(configuration: RealmConfig.Main.configuration)
+        
         
         switch segmentioStyle {
         case .onlyLabel, .imageBeforeLabel, .imageAfterLabel:
@@ -62,6 +66,38 @@ class putOrderVC: UIViewController {
     
  
     
+    @IBAction func StartOrder(_ sender: Any) {
+        order.name = "001"
+        
+        
+    }
+    @IBAction func ClearOrder(_ sender: Any) {
+        order.name = ""
+        order.itemList.removeAll()
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+            
+        case UICollectionElementKindSectionHeader:
+            
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "headview",
+                                                                             for: indexPath) as! CollectionHeadView
+   
+            
+            
+            return headerView
+        default:
+            
+            fatalError("Unexpected element kind")
+        }
+    }
+    
     func OpenMenu() {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
@@ -74,6 +110,62 @@ class putOrderVC: UIViewController {
         setupBadgeCountForIndex(1)
     }
     
+    
+    
+    
+    @IBAction func StepperValueChange(_ sender: UIStepper) {
+        guard  order.name.characters.count > 0 else { return }
+        
+        let Index = IndexPath(item: sender.tag, section:0)
+        
+        let item = products[Int(sender.tag)]
+      //  order.itemList.append(item)
+        
+        
+        
+      //  collectionView.reloadItems(at: [Index])
+        
+        
+    }
+    
+    
+}
+
+extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
+     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  
+        return products.count
+    }
+    
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCell
+        cell.setData(item: products[indexPath.row], index: indexPath.row)
+        
+        
+        return cell
+    }
+    
+    
+    
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(products[indexPath.row].name) 
+        
+        
+        
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        
+        
+    }
+}
+
+extension putOrderVC {
+    
     fileprivate func setupSegmentioView() {
         segmentioView.setup(
             content: segmentioContent(),
@@ -84,13 +176,14 @@ class putOrderVC: UIViewController {
         segmentioView.selectedSegmentioIndex = selectedSegmentioIndex()
         
         segmentioView.valueDidChange = { [weak self] _, segmentIndex in
-                print (segmentIndex )
+            print (segmentIndex )
         }
     }
     
     fileprivate func setupBadgeCountForIndex(_ index: Int) {
         segmentioView.addBadge(at: index, count: 10, color: ColorPalette.coral)
     }
+
     
     fileprivate func segmentioContent() -> [SegmentioItem] {
         return [
@@ -145,6 +238,7 @@ class putOrderVC: UIViewController {
             )
         )
     }
+
     
     fileprivate func segmentioState(backgroundColor: UIColor, titleFont: UIFont, titleTextColor: UIColor) -> SegmentioState {
         return SegmentioState(backgroundColor: backgroundColor, titleFont: titleFont, titleTextColor: titleTextColor)
@@ -161,51 +255,13 @@ class putOrderVC: UIViewController {
     fileprivate func segmentioVerticalSeparatorOptions() -> SegmentioVerticalSeparatorOptions {
         return SegmentioVerticalSeparatorOptions(ratio: 1, color: ColorPalette.whiteSmoke)
     }
-
+    
     fileprivate func selectedSegmentioIndex() -> Int {
         return 0
     }
-    
-    
-    @IBAction func StepperValueChange(_ sender: UIView) {
-        
-        
-        
-        
-    }
-    
-    
-}
 
-extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
-     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    
-     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-  
-        return products.count
-    }
-    
-     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:ItemCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCell
-        cell.setData(item: products[indexPath.row], index: indexPath.row)
-        
-        
-        return cell
-    }
     
     
     
-     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(products[indexPath.row].name) 
-        
-        
-        
-        let cell = collectionView.cellForItem(at: indexPath)
-        
-        
-        
-    }
+    
 }

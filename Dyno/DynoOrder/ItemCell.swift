@@ -12,16 +12,16 @@ import ValueStepper
 class ItemCell: UICollectionViewCell {
     
     @IBOutlet weak var imageV: UIImageView!
-    @IBOutlet weak var TitleLabel: UILabel!
-    @IBOutlet weak var valueStepper: ValueStepper!
-    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var number: UILabel!
     let colors = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.cyan, UIColor.gray,UIColor.brown, UIColor.orange ]
     
     func setData(item: Product, index:Int) {
        // imageV.image = UIImage(name: "   ")
-        TitleLabel.text = item.name
+        name.text = item.name
         backgroundColor = colors[index%colors.count]
-        valueStepper.tag = index
+       
     }
     
 }
