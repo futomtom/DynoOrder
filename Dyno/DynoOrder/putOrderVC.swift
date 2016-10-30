@@ -76,7 +76,7 @@ class putOrderVC: UIViewController {
         order.itemList.removeAll()
         
     }
-    
+    /*
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
@@ -85,7 +85,7 @@ class putOrderVC: UIViewController {
             
         case UICollectionElementKindSectionHeader:
             
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+            let headerView:CollectionHeadView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: "headview",
                                                                              for: indexPath) as! CollectionHeadView
    
@@ -96,7 +96,7 @@ class putOrderVC: UIViewController {
             
             fatalError("Unexpected element kind")
         }
-    }
+    }*/
     
     func OpenMenu() {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
@@ -131,7 +131,7 @@ class putOrderVC: UIViewController {
     
 }
 
-extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
+extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
      func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -154,14 +154,23 @@ extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(products[indexPath.row].name) 
-        
-        
-        
+    
         let cell = collectionView.cellForItem(at: indexPath)
         
-        
-        
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (UIScreen.main.bounds.width - 10*5) / 3
+        return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+       
+        return UIEdgeInsetsMake(0, 10, 0, 10)
+    }
+    
+    
+    
 }
 
 extension putOrderVC {

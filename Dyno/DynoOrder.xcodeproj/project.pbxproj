@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8207E0361DB9DF4A0072A9EB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E0351DB9DF4A0072A9EB /* ItemCell.swift */; };
+		824DD2F91DC5AFE800069F03 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DD2F81DC5AFE800069F03 /* BorderedButton.swift */; };
 		82DBF86E1DBC9BE800633DA8 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86D1DBC9BE800633DA8 /* RealmConfig.swift */; };
 		82DBF8701DBC9D0E00633DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */; };
 		D05EFD8A3D8EBD6A0C9570D3 /* Pods_DynoOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */; };
@@ -27,7 +28,6 @@
 		FA9803D61DB9795700C6F4C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9803D41DB9795700C6F4C9 /* LaunchScreen.storyboard */; };
 		FA9803E11DB97A0300C6F4C9 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9803DE1DB97A0300C6F4C9 /* PresentedViewController.swift */; };
 		FADA42741DC5954E00CA8859 /* CollectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA42731DC5954E00CA8859 /* CollectionHeadView.swift */; };
-		FADA42781DC59E5F00CA8859 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA42771DC59E5F00CA8859 /* BorderedButton.swift */; };
 		FADFE58F1DBEE5EB00B183B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFE58E1DBEE5EB00B183B5 /* Constants.swift */; };
 		FADFE5911DBEE60000B183B5 /* SharedFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFE5901DBEE60000B183B5 /* SharedFunctionality.swift */; };
 		FADFE5941DBEEA1700B183B5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADFE5921DBEEA1700B183B5 /* Realm.framework */; };
@@ -56,6 +56,7 @@
 		4D02A09AACA7C8FE4B8175AD /* Pods-DynoOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynoOrder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynoOrder/Pods-DynoOrder.debug.xcconfig"; sourceTree = "<group>"; };
 		58CF027A5CB5815F065325A4 /* Pods-DynoOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynoOrder.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynoOrder/Pods-DynoOrder.release.xcconfig"; sourceTree = "<group>"; };
 		8207E0351DB9DF4A0072A9EB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		824DD2F81DC5AFE800069F03 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		82DBF86C1DBC9B4300633DA8 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		82DBF86D1DBC9BE800633DA8 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		FA9803D71DB9795700C6F4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9803DE1DB97A0300C6F4C9 /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		FADA42731DC5954E00CA8859 /* CollectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeadView.swift; sourceTree = "<group>"; };
-		FADA42771DC59E5F00CA8859 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderedButton.swift; path = "../../../../dynolife/DynoScore/UI Helper/BorderedButton.swift"; sourceTree = "<group>"; };
 		FADFE58E1DBEE5EB00B183B5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FADFE5901DBEE60000B183B5 /* SharedFunctionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunctionality.swift; sourceTree = "<group>"; };
 		FADFE5921DBEEA1700B183B5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				FA71BB351DB9B772007C3CE4 /* Model */,
 				FA9803CB1DB9795700C6F4C9 /* AppDelegate.swift */,
 				82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */,
-				FADA42771DC59E5F00CA8859 /* BorderedButton.swift */,
+				824DD2F81DC5AFE800069F03 /* BorderedButton.swift */,
 				FADFE5991DBF084000B183B5 /* LoginVC.swift */,
 				FA9803DE1DB97A0300C6F4C9 /* PresentedViewController.swift */,
 				FA8C36F41DBFD94D00B7A361 /* RightMenuTableView.swift */,
@@ -317,9 +317,9 @@
 				8207E0361DB9DF4A0072A9EB /* ItemCell.swift in Sources */,
 				FA9803CC1DB9795700C6F4C9 /* AppDelegate.swift in Sources */,
 				82DBF8701DBC9D0E00633DA8 /* ViewController.swift in Sources */,
-				FADA42781DC59E5F00CA8859 /* BorderedButton.swift in Sources */,
 				FA8C36F31DBFCB4100B7A361 /* tableviewCells.swift in Sources */,
 				FA8C36F91DBFF7C800B7A361 /* LeftMenuTableView.swift in Sources */,
+				824DD2F91DC5AFE800069F03 /* BorderedButton.swift in Sources */,
 				FADFE58F1DBEE5EB00B183B5 /* Constants.swift in Sources */,
 				FA8C36F51DBFD94D00B7A361 /* RightMenuTableView.swift in Sources */,
 				FA71BB371DB9B78D007C3CE4 /* Dish.swift in Sources */,

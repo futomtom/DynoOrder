@@ -17,10 +17,18 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var number: UILabel!
     let colors = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.cyan, UIColor.gray,UIColor.brown, UIColor.orange ]
     
+    
+    override func awakeFromNib() {
+        
+        layer.borderColor=UIColor.darkGray.cgColor
+        layer.borderWidth=1
+        layer.cornerRadius = 4
+    }
+    
     func setData(item: Product, index:Int) {
        // imageV.image = UIImage(name: "   ")
         name.text = item.name
-        backgroundColor = colors[index%colors.count]
+     //   backgroundColor = colors[index%colors.count]
        
     }
     
