@@ -76,7 +76,7 @@ class putOrderVC: UIViewController {
         order.itemList.removeAll()
         
     }
-    /*
+    
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
@@ -96,7 +96,7 @@ class putOrderVC: UIViewController {
             
             fatalError("Unexpected element kind")
         }
-    }*/
+    }
     
     func OpenMenu() {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)

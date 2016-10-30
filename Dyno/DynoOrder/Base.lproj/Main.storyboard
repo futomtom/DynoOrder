@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yAA-s6-Bam">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -153,7 +153,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dqh-bs-m2M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40552088260998964" green="0.73925240682323867" blue="0.90960985422134399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="8" maxY="0.0"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="vVB-ag-TnU">
@@ -247,7 +247,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="49z-eA-JB7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.81960784310000001" green="0.82745098039999998" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="NLA-8t-ufi" detailTextLabel="gRD-Mt-9su" style="IBUITableViewCellStyleValue1" id="8Ng-b4-4hH" customClass="ItemDetailCell" customModule="DynoOrder" customModuleProvider="target">
@@ -572,8 +572,11 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qaf-JZ-8vc" customClass="BorderedButton" customModule="DynoOrder" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="8" width="187.5" height="30"/>
-                                            <state key="normal" title="Start"/>
+                                            <rect key="frame" x="8" y="8" width="150" height="30"/>
+                                            <color key="backgroundColor" red="0.40552088260000002" green="0.73925240680000004" blue="0.90960985419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Start">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                     <real key="value" value="1"/>
@@ -587,26 +590,20 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-As-ZUC" customClass="BorderedButton" customModule="DynoOrder" customModuleProvider="target">
-                                            <rect key="frame" x="179.5" y="8" width="187.5" height="30"/>
-                                            <state key="normal" title="Clear"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
-                                                    <real key="value" value="2"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
+                                            <rect key="frame" x="217" y="8" width="150" height="30"/>
+                                            <color key="backgroundColor" red="1" green="0.66274509800000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Clear">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <connections>
                                                 <action selector="ClearOrder:" destination="X3Q-Qd-BTR" eventType="touchUpInside" id="lNh-hD-IhW"/>
-                                                <action selector="NewOrder:" destination="X3Q-Qd-BTR" eventType="touchUpInside" id="oKa-M8-XZv"/>
                                             </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="pWf-As-ZUC" secondAttribute="trailing" id="NuC-oT-5fp"/>
-                                        <constraint firstItem="Qaf-JZ-8vc" firstAttribute="width" secondItem="rOp-sr-Gzo" secondAttribute="width" multiplier="0.5" id="R2i-CY-Oae"/>
-                                        <constraint firstItem="pWf-As-ZUC" firstAttribute="width" secondItem="rOp-sr-Gzo" secondAttribute="width" multiplier="0.5" id="VXd-Ay-ZjW"/>
+                                        <constraint firstItem="Qaf-JZ-8vc" firstAttribute="width" secondItem="rOp-sr-Gzo" secondAttribute="width" multiplier="0.4" id="R2i-CY-Oae"/>
+                                        <constraint firstItem="pWf-As-ZUC" firstAttribute="width" secondItem="rOp-sr-Gzo" secondAttribute="width" multiplier="0.4" id="VXd-Ay-ZjW"/>
                                         <constraint firstItem="Qaf-JZ-8vc" firstAttribute="leading" secondItem="rOp-sr-Gzo" secondAttribute="leadingMargin" id="dsu-qt-s0m"/>
                                         <constraint firstItem="pWf-As-ZUC" firstAttribute="top" secondItem="rOp-sr-Gzo" secondAttribute="topMargin" id="lUG-Ka-53D"/>
                                         <constraint firstItem="Qaf-JZ-8vc" firstAttribute="top" secondItem="rOp-sr-Gzo" secondAttribute="topMargin" id="xBT-sL-Tkc"/>
