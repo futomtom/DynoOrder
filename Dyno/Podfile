@@ -6,5 +6,4 @@ target 'DynoOrder'
 
  pod 'SideMenu'
  pod 'Segmentio', :path => '../'
- pod 'ValueStepper'
 

@@ -74,14 +74,14 @@ class putOrderVC: UIViewController {
            BeginOrder()
             
         } else {
-            let alertController = UIAlertController(title: "Clean Order", message: "will clean orders", preferredStyle:UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: NSLocalizedString("Clean Order",comment:""), message: NSLocalizedString("Clean Order",comment:""), preferredStyle:UIAlertControllerStyle.alert)
             
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+            let cancelAction = UIAlertAction(title: NSLocalizedString("Clean Order",comment:""), style: .cancel) { _ in
                 sender.isOn = true
             }
             alertController.addAction(cancelAction)
             
-            let OKAction = UIAlertAction(title: "OK", style: .default) { _ in
+            let OKAction = UIAlertAction(title: NSLocalizedString("Clean Order",comment:""), style: .default) { _ in
                self.CleanOrder()
                
                 

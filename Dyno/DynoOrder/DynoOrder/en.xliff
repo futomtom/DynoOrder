@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="DynoOrder/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body/>
+  </file>
+  <file original="DynoOrder/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="2Y3-gl-F7U.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "2Y3-gl-F7U";</note>
+      </trans-unit>
+      <trans-unit id="4WI-Ed-3Gr.text">
+        <source>Push View Controller 1</source>
+        <note>Class = "UILabel"; text = "Push View Controller 1"; ObjectID = "4WI-Ed-3Gr";</note>
+      </trans-unit>
+      <trans-unit id="6x7-O7-DkG.text">
+        <source>order</source>
+        <note>Class = "UILabel"; text = "order"; ObjectID = "6x7-O7-DkG";</note>
+      </trans-unit>
+      <trans-unit id="7ZN-B1-BZs.text">
+        <source>ID</source>
+        <note>Class = "UILabel"; text = "ID"; ObjectID = "7ZN-B1-BZs";</note>
+      </trans-unit>
+      <trans-unit id="8IH-BK-QXW.text">
+        <source>Detail</source>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "8IH-BK-QXW";</note>
+      </trans-unit>
+      <trans-unit id="27i-wx-jKE.text">
+        <source>Start Order</source>
+        <note>Class = "UILabel"; text = "Start Order"; ObjectID = "27i-wx-jKE";</note>
+      </trans-unit>
+      <trans-unit id="I4v-gH-e3M.title">
+        <source>You Can Still Swipe!</source>
+        <note>Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "I4v-gH-e3M";</note>
+      </trans-unit>
+      <trans-unit id="Jvw-iQ-O1A.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "Jvw-iQ-O1A";</note>
+      </trans-unit>
+      <trans-unit id="LXz-Eu-D0y.title">
+        <source>You Can Still Swipe!</source>
+        <note>Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "LXz-Eu-D0y";</note>
+      </trans-unit>
+      <trans-unit id="NLA-8t-ufi.text">
+        <source>Item 1</source>
+        <note>Class = "UILabel"; text = "Item 1"; ObjectID = "NLA-8t-ufi";</note>
+      </trans-unit>
+      <trans-unit id="TJh-vs-sd4.normalTitle">
+        <source>Dismiss</source>
+        <note>Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "TJh-vs-sd4";</note>
+      </trans-unit>
+      <trans-unit id="WpX-kk-l7E.text">
+        <source>name</source>
+        <note>Class = "UILabel"; text = "name"; ObjectID = "WpX-kk-l7E";</note>
+      </trans-unit>
+      <trans-unit id="YZg-wp-CL5.placeholder">
+        <source>E-Mail</source>
+        <note>Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "YZg-wp-CL5";</note>
+      </trans-unit>
+      <trans-unit id="a17-pq-WAQ.normalTitle">
+        <source>Dismiss</source>
+        <note>Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "a17-pq-WAQ";</note>
+      </trans-unit>
+      <trans-unit id="cKk-fD-whk.normalTitle">
+        <source>Dismiss</source>
+        <note>Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "cKk-fD-whk";</note>
+      </trans-unit>
+      <trans-unit id="csP-tV-uyu.title">
+        <source> </source>
+        <note>Class = "UIBarButtonItem"; title = " "; ObjectID = "csP-tV-uyu";</note>
+      </trans-unit>
+      <trans-unit id="gRD-Mt-9su.text">
+        <source>Detail</source>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "gRD-Mt-9su";</note>
+      </trans-unit>
+      <trans-unit id="i7z-FZ-RVI.placeholder">
+        <source>Passwort</source>
+        <note>Class = "UITextField"; placeholder = "Passwort"; ObjectID = "i7z-FZ-RVI";</note>
+      </trans-unit>
+      <trans-unit id="igL-eY-0yM.title">
+        <source> </source>
+        <note>Class = "UIBarButtonItem"; title = " "; ObjectID = "igL-eY-0yM";</note>
+      </trans-unit>
+      <trans-unit id="pWf-As-ZUC.normalTitle">
+        <source>Submit</source>
+        <note>Class = "UIButton"; normalTitle = "Submit"; ObjectID = "pWf-As-ZUC";</note>
+      </trans-unit>
+      <trans-unit id="rJ0-O9-8sM.normalTitle">
+        <source>Login</source>
+        <note>Class = "UIButton"; normalTitle = "Login"; ObjectID = "rJ0-O9-8sM";</note>
+      </trans-unit>
+      <trans-unit id="yhC-Vd-zHj.text">
+        <source>Detail</source>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "yhC-Vd-zHj";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="DynoOrder/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
