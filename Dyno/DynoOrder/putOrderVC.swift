@@ -27,6 +27,7 @@ class putOrderVC: UIViewController {
     var order:Order!
     var  beginOrder = false
 
+  
 
     
     // MARK: - Init
@@ -69,7 +70,7 @@ class putOrderVC: UIViewController {
     
     @IBAction func orderSwitch_ValueChange(_ sender: UISwitch) {
         if sender.isOn {
-            print("on")
+           BeginOrder()
             
         } else {
             let alertController = UIAlertController(title: "Clean Order", message: "will clean orders", preferredStyle:UIAlertControllerStyle.alert)
@@ -80,7 +81,8 @@ class putOrderVC: UIViewController {
             alertController.addAction(cancelAction)
             
             let OKAction = UIAlertAction(title: "OK", style: .default) { _ in
-                print("clean order")
+               self.CleanOrder()
+               
                 
             }
             alertController.addAction(OKAction)
@@ -90,34 +92,23 @@ class putOrderVC: UIViewController {
         }
     
     }
-    
-    
-    @IBAction func StartOrder(_ sender: UIButton) {
-        if !beginOrder {
-            order = Order()
-            order.name = "hi"
-            print("begin")
-            beginOrder = true
-            sender.isEnabled = false
-            sender.backgroundColor = UIColor.lightGray
-        }
-        
+    func BeginOrder() {
+        order = Order()
+        order.name = "hi"
+        beginOrder = true
         
     }
- 
     
-    @IBAction func ClearOrder(_ sender: Any) {
-        
-        guard let order = order  else {
-            return
-        }
-        
-            order.itemList.removeAll()
-            self.order = nil
-             beginOrder = false
-        
+    
+    func CleanOrder() {
+         beginOrder = false
         
     }
+    
+    
+   
+    
+  
     
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
@@ -156,16 +147,18 @@ class putOrderVC: UIViewController {
     
     
     @IBAction func StepperValueChange(_ sender: UIStepper) {
-        guard  let order = order else { return }
+        guard  beginOrder  else {
+            sender.value = 0
+            return
+        }
         
         let indexPath = IndexPath(item: sender.tag, section:0)
         
-        let header = self.collectionView?.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: indexPath) as! CollectionHeadView
-        header.items.text = "1"
+     
 
         
         let cell = collectionView.cellForItem(at: indexPath) as! ItemCell
-        cell.number.text = "\(sender.value)"
+        cell.number.text = "\(Int(sender.value))"
         
         
     }
