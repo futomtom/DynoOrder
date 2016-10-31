@@ -26,6 +26,7 @@ class putOrderVC: UIViewController {
     var products: Results<Product>!
     var order:Order!
     var  beginOrder = false
+    
 
   
 
@@ -151,8 +152,22 @@ class putOrderVC: UIViewController {
             sender.value = 0
             return
         }
+   /*
+        let  items = realm.
+            .query(order.class)
+            .contains("PurchaseItem.product.pid", products[sender.tag].pid)
+            .findAll()
+        
+        if items == nil {
+            
+        } else {
+            items.
+            
+        }
+ */
         
         let indexPath = IndexPath(item: sender.tag, section:0)
+   //     if order.itemList.contains(PurchaseItem)
         
      
 

@@ -2,18 +2,7 @@ import Foundation
 import RealmSwift
 
 
-class PurchaseItem: Object {
-    dynamic var product:Product?
-    dynamic var amount = 0
-    dynamic var type = 0
-    dynamic var subtotal = 0
-    
-    
-   /* func getSubtotal () -> Int {
-        return (product?.price)! * amount
-    }*/
-    
-}
+
 
 
 class Order: Object {
@@ -37,8 +26,18 @@ class Product: Object {
         
         return realm.objects(Product.self)
     }
+}
+
+class PurchaseItem: Object {
+    dynamic var product:Product?
+    dynamic var amount = 0
+    dynamic var type = 0
+    dynamic var subtotal = 0
     
     
+    /* func getSubtotal () -> Int {
+     return (product?.price)! * amount
+     }*/
     
 }
 

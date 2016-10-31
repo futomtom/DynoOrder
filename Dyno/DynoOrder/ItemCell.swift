@@ -28,6 +28,7 @@ class ItemCell: UICollectionViewCell {
     func setData(item: Product, index:Int) {
        // imageV.image = UIImage(name: "   ")
         name.text = item.name
+        stepper.tag = index
      //   backgroundColor = colors[index%colors.count]
        
     }
