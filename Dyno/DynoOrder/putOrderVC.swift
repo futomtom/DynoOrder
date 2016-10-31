@@ -25,6 +25,7 @@ class putOrderVC: UIViewController {
     var realm:Realm!
     var products: Results<Product>!
     var order:Order!
+    var  beginOrder = false
 
 
     
@@ -54,6 +55,8 @@ class putOrderVC: UIViewController {
         let RightButtonItem = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .plain, target: self, action:  #selector(self.OpenMenu))
         self.navigationItem.setLeftBarButton(RightButtonItem, animated: true)
         
+        (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).sectionHeadersPinToVisibleBounds = true
+        
         LoadData()
     }
     
@@ -64,16 +67,55 @@ class putOrderVC: UIViewController {
     
     }
     
- 
+    @IBAction func orderSwitch_ValueChange(_ sender: UISwitch) {
+        if sender.isOn {
+            print("on")
+            
+        } else {
+            let alertController = UIAlertController(title: "Clean Order", message: "will clean orders", preferredStyle:UIAlertControllerStyle.alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+                sender.isOn = true
+            }
+            alertController.addAction(cancelAction)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) { _ in
+                print("clean order")
+                
+            }
+            alertController.addAction(OKAction)
+            
+            self.present(alertController, animated: true, completion:nil)
+
+        }
     
-    @IBAction func StartOrder(_ sender: Any) {
-        order.name = "001"
+    }
+    
+    
+    @IBAction func StartOrder(_ sender: UIButton) {
+        if !beginOrder {
+            order = Order()
+            order.name = "hi"
+            print("begin")
+            beginOrder = true
+            sender.isEnabled = false
+            sender.backgroundColor = UIColor.lightGray
+        }
         
         
     }
+ 
+    
     @IBAction func ClearOrder(_ sender: Any) {
-        order.name = ""
-        order.itemList.removeAll()
+        
+        guard let order = order  else {
+            return
+        }
+        
+            order.itemList.removeAll()
+            self.order = nil
+             beginOrder = false
+        
         
     }
     
@@ -114,21 +156,19 @@ class putOrderVC: UIViewController {
     
     
     @IBAction func StepperValueChange(_ sender: UIStepper) {
-        guard  order.name.characters.count > 0 else { return }
+        guard  let order = order else { return }
         
-        let Index = IndexPath(item: sender.tag, section:0)
+        let indexPath = IndexPath(item: sender.tag, section:0)
         
-        let item = products[Int(sender.tag)]
-      //  order.itemList.append(item)
+        let header = self.collectionView?.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: indexPath) as! CollectionHeadView
+        header.items.text = "1"
+
         
-        
-        
-      //  collectionView.reloadItems(at: [Index])
+        let cell = collectionView.cellForItem(at: indexPath) as! ItemCell
+        cell.number.text = "\(sender.value)"
         
         
     }
-    
-    
 }
 
 extension putOrderVC: UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
