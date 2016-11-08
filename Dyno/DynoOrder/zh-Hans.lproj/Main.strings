@@ -1,0 +1,60 @@
+/* Class = "UILabel"; text = "0"; ObjectID = "2Y3-gl-F7U"; */
+"2Y3-gl-F7U.text" = "0";
+
+/* Class = "UILabel"; text = "Push View Controller 1"; ObjectID = "4WI-Ed-3Gr"; */
+"4WI-Ed-3Gr.text" = "Push View Controller 1";
+
+/* Class = "UILabel"; text = "order"; ObjectID = "6x7-O7-DkG"; */
+"6x7-O7-DkG.text" = "order";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "7ZN-B1-BZs"; */
+"7ZN-B1-BZs.text" = "ID";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "8IH-BK-QXW"; */
+"8IH-BK-QXW.text" = "中文";
+
+/* Class = "UILabel"; text = "Start Order"; ObjectID = "27i-wx-jKE"; */
+"27i-wx-jKE.text" = "中文";
+
+/* Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "I4v-gH-e3M"; */
+"I4v-gH-e3M.title" = "中文";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Jvw-iQ-O1A"; */
+"Jvw-iQ-O1A.text" = "0";
+
+/* Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "LXz-Eu-D0y"; */
+"LXz-Eu-D0y.title" = "中文";
+
+/* Class = "UILabel"; text = "Item 1"; ObjectID = "NLA-8t-ufi"; */
+"NLA-8t-ufi.text" = "Item 1";
+
+/* Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "TJh-vs-sd4"; */
+"TJh-vs-sd4.normalTitle" = "Dismiss";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "WpX-kk-l7E"; */
+"WpX-kk-l7E.text" = "name";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "YZg-wp-CL5"; */
+"YZg-wp-CL5.placeholder" = "E-Mail";
+
+/* Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "a17-pq-WAQ"; */
+"a17-pq-WAQ.normalTitle" = "Dismiss";
+
+/* Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "cKk-fD-whk"; */
+"cKk-fD-whk.normalTitle" = "Dismiss";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "gRD-Mt-9su"; */
+"gRD-Mt-9su.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "Passwort"; ObjectID = "i7z-FZ-RVI"; */
+"i7z-FZ-RVI.placeholder" = "Passwort";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "pWf-As-ZUC"; */
+"pWf-As-ZUC.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "rJ0-O9-8sM"; */
+"rJ0-O9-8sM.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "yhC-Vd-zHj"; */
+"yhC-Vd-zHj.text" = "Detail";
+

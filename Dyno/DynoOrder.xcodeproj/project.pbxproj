@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8207E0361DB9DF4A0072A9EB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E0351DB9DF4A0072A9EB /* ItemCell.swift */; };
 		824DD2F91DC5AFE800069F03 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DD2F81DC5AFE800069F03 /* BorderedButton.swift */; };
+		82695B3E1DD1B19500053798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82695B401DD1B19500053798 /* InfoPlist.strings */; };
+		82695B431DD1B31E00053798 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82695B451DD1B31E00053798 /* Localizable.strings */; };
 		82DBF86E1DBC9BE800633DA8 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86D1DBC9BE800633DA8 /* RealmConfig.swift */; };
 		82DBF8701DBC9D0E00633DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */; };
 		D05EFD8A3D8EBD6A0C9570D3 /* Pods_DynoOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4108D4EBFF75C2338F2E48C /* Pods_DynoOrder.framework */; };
@@ -57,6 +59,10 @@
 		58CF027A5CB5815F065325A4 /* Pods-DynoOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynoOrder.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynoOrder/Pods-DynoOrder.release.xcconfig"; sourceTree = "<group>"; };
 		8207E0351DB9DF4A0072A9EB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		824DD2F81DC5AFE800069F03 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		82695B3A1DD1B0E500053798 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		82695B3B1DD1B0E600053798 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		82695B3F1DD1B19500053798 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		82695B441DD1B31E00053798 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		82DBF86C1DBC9B4300633DA8 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		82DBF86D1DBC9BE800633DA8 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		82DBF86F1DBC9D0E00633DA8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 		FA9803CA1DB9795700C6F4C9 /* DynoOrder */ = {
 			isa = PBXGroup;
 			children = (
+				82695B451DD1B31E00053798 /* Localizable.strings */,
+				82695B401DD1B19500053798 /* InfoPlist.strings */,
 				FADFE58D1DBEE5CF00B183B5 /* Realm_share */,
 				FA71BB351DB9B772007C3CE4 /* Model */,
 				FA9803CB1DB9795700C6F4C9 /* AppDelegate.swift */,
@@ -249,9 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA11883A1DC05A1700DDF494 /* default.realm in Resources */,
+				82695B431DD1B31E00053798 /* Localizable.strings in Resources */,
 				FA9803D61DB9795700C6F4C9 /* LaunchScreen.storyboard in Resources */,
 				FA9803D31DB9795700C6F4C9 /* Assets.xcassets in Resources */,
 				FA9803D11DB9795700C6F4C9 /* Main.storyboard in Resources */,
+				82695B3E1DD1B19500053798 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,10 +345,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		82695B401DD1B19500053798 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82695B3F1DD1B19500053798 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82695B451DD1B31E00053798 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82695B441DD1B31E00053798 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FA9803CF1DB9795700C6F4C9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FA9803D01DB9795700C6F4C9 /* Base */,
+				82695B3A1DD1B0E500053798 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -347,6 +374,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA9803D51DB9795700C6F4C9 /* Base */,
+				82695B3B1DD1B0E600053798 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -358,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -407,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

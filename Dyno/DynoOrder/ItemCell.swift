@@ -27,7 +27,7 @@ class ItemCell: UICollectionViewCell {
     
     func setData(item: Product, index:Int) {
        // imageV.image = UIImage(name: "   ")
-        name.text = item.name
+        name.text = NSLocalizedString("my book",comment:"")
         stepper.tag = index
      //   backgroundColor = colors[index%colors.count]
        

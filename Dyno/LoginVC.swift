@@ -15,14 +15,15 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var Password: UITextField!
     
-    @IBOutlet var myview: UIView!
+    @IBOutlet weak var Label1: UILabel!
+
 
         override func viewDidLoad() {
             super.viewDidLoad()
             
         
-            
-            
+           
+            Label1.text = NSLocalizedString("hello",comment:"")
 
             setupSideMenu()
             
