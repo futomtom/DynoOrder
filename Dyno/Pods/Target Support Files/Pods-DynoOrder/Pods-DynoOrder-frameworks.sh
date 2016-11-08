@@ -86,10 +86,8 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Segmentio/Segmentio.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ValueStepper/ValueStepper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Segmentio/Segmentio.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ValueStepper/ValueStepper.framework"
 fi

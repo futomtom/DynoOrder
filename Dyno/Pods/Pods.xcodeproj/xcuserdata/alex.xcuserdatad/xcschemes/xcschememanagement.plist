@@ -24,35 +24,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ValueStepper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>053A6464AE20B76D5A0326711E8AFB3E</key>
+		<key>0C50C09988203FF574FDF611491DB9E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0CE9612F71F1FC54C6AB2C1D5AB2AB1D</key>
+		<key>406670A618C6375FEB09E18AED5E6C27</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16870AC23524B6B41F6B397EE534168C</key>
+		<key>54DF8EE10CA93313E0FF6F19A6EFE2B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6BD762EF58BDA1163924E06792B00E7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4FA85363D12DBB394475A9D07F1EEF7</key>
+		<key>8A8BEC5A3B8A795497A444590502F83F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

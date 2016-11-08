@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+
+/* Class = "UILabel"; text = "Start Order"; ObjectID = "27i-wx-jKE"; */
+"27i-wx-jKE.text" = "Start Order";
+
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
 /* Class = "UILabel"; text = "0"; ObjectID = "2Y3-gl-F7U"; */
 "2Y3-gl-F7U.text" = "0";
 
@@ -11,6 +18,7 @@
 "7ZN-B1-BZs.text" = "ID";
 
 /* Class = "UILabel"; text = "Detail"; ObjectID = "8IH-BK-QXW"; */
+<<<<<<< HEAD
 "8IH-BK-QXW.text" = "中文";
 
 /* Class = "UILabel"; text = "Start Order"; ObjectID = "27i-wx-jKE"; */
@@ -18,12 +26,22 @@
 
 /* Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "I4v-gH-e3M"; */
 "I4v-gH-e3M.title" = "中文";
+=======
+"8IH-BK-QXW.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "I4v-gH-e3M"; */
+"I4v-gH-e3M.title" = "You Can Still Swipe!";
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Jvw-iQ-O1A"; */
 "Jvw-iQ-O1A.text" = "0";
 
 /* Class = "UINavigationItem"; title = "You Can Still Swipe!"; ObjectID = "LXz-Eu-D0y"; */
+<<<<<<< HEAD
 "LXz-Eu-D0y.title" = "中文";
+=======
+"LXz-Eu-D0y.title" = "You Can Still Swipe!";
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
 
 /* Class = "UILabel"; text = "Item 1"; ObjectID = "NLA-8t-ufi"; */
 "NLA-8t-ufi.text" = "Item 1";
@@ -43,12 +61,24 @@
 /* Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "cKk-fD-whk"; */
 "cKk-fD-whk.normalTitle" = "Dismiss";
 
+<<<<<<< HEAD
+=======
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "csP-tV-uyu"; */
+"csP-tV-uyu.title" = " ";
+
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
 /* Class = "UILabel"; text = "Detail"; ObjectID = "gRD-Mt-9su"; */
 "gRD-Mt-9su.text" = "Detail";
 
 /* Class = "UITextField"; placeholder = "Passwort"; ObjectID = "i7z-FZ-RVI"; */
 "i7z-FZ-RVI.placeholder" = "Passwort";
 
+<<<<<<< HEAD
+=======
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "igL-eY-0yM"; */
+"igL-eY-0yM.title" = " ";
+
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
 /* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "pWf-As-ZUC"; */
 "pWf-As-ZUC.normalTitle" = "Submit";
 
@@ -57,4 +87,7 @@
 
 /* Class = "UILabel"; text = "Detail"; ObjectID = "yhC-Vd-zHj"; */
 "yhC-Vd-zHj.text" = "Detail";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87b0e319622a0722d8ceea9416f3b0fb0049ac02
