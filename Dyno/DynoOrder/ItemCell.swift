@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ValueStepper
+
 
 class ItemCell: UICollectionViewCell {
     
