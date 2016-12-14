@@ -638,7 +638,16 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="2qV-el-Zdf">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="GP7-gr-5Bt"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="GP7-gr-5Bt">
+                            <connections>
+                                <action selector="OpenMainMenu:" destination="X3Q-Qd-BTR" id="kLF-uD-cwn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menu" id="S33-ba-FcY">
+                            <connections>
+                                <action selector="OpenSideMenu:" destination="X3Q-Qd-BTR" id="IN1-x3-bZn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="bnl-iK-gXK" id="fbl-Hz-xih"/>

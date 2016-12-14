@@ -54,9 +54,7 @@ class putOrderVC: UIViewController {
             break
         }
 
-        let RightButtonItem = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .plain, target: self, action: #selector(self.OpenMenu))
-        self.navigationItem.setLeftBarButton(RightButtonItem, animated: true)
-
+ 
         (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).sectionHeadersPinToVisibleBounds = true
 
         LoadData()
@@ -138,10 +136,13 @@ class putOrderVC: UIViewController {
         }
     }
 
-    func OpenMenu() {
-        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+    @IBAction func OpenMainMenu(_ sender: Any) {        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+
     }
 
+    @IBAction func OpenSideMenu(_ sender: Any) {
+        present(SideMenuManager.menuRightNavigationController!, animated: true, completion: nil)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

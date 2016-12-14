@@ -20,15 +20,9 @@ class LoginVC: UIViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-        
-           
+
             Label1.text = NSLocalizedString("hello",comment:"")
 
-
-            
-            
-            
         }
         
       
